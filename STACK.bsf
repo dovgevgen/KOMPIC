@@ -79,6 +79,20 @@ applicable agreement for further details.
 		(text "ENABLE_WRITE" (rect 129 59 219 73)(font "Arial" (font_size 8)))
 		(line (pt 240 64)(pt 224 64)(line_width 1))
 	)
+	(port
+		(pt 240 80)
+		(output)
+		(text "STACK1[13..0]" (rect 0 0 83 14)(font "Arial" (font_size 8)))
+		(text "STACK1[13..0]" (rect 136 75 219 89)(font "Arial" (font_size 8)))
+		(line (pt 240 80)(pt 224 80)(line_width 3))
+	)
+	(port
+		(pt 240 96)
+		(output)
+		(text "STACK2[13..0]" (rect 0 0 83 14)(font "Arial" (font_size 8)))
+		(text "STACK2[13..0]" (rect 136 91 219 105)(font "Arial" (font_size 8)))
+		(line (pt 240 96)(pt 224 96)(line_width 3))
+	)
 	(drawing
 		(rectangle (rect 16 16 224 112)(line_width 1))
 	)

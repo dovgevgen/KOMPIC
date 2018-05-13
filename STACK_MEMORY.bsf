@@ -65,6 +65,20 @@ applicable agreement for further details.
 		(text "DATA_OUT[13..0]" (rect 118 27 219 41)(font "Arial" (font_size 8)))
 		(line (pt 240 32)(pt 224 32)(line_width 3))
 	)
+	(port
+		(pt 240 48)
+		(output)
+		(text "STECK2[13..0]" (rect 0 0 81 14)(font "Arial" (font_size 8)))
+		(text "STECK2[13..0]" (rect 138 43 219 57)(font "Arial" (font_size 8)))
+		(line (pt 240 48)(pt 224 48)(line_width 3))
+	)
+	(port
+		(pt 240 64)
+		(output)
+		(text "STECK1[13..0]" (rect 0 0 81 14)(font "Arial" (font_size 8)))
+		(text "STECK1[13..0]" (rect 138 59 219 73)(font "Arial" (font_size 8)))
+		(line (pt 240 64)(pt 224 64)(line_width 3))
+	)
 	(drawing
 		(rectangle (rect 16 16 224 112)(line_width 1))
 	)

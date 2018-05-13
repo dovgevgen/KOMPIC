@@ -2525,329 +2525,6 @@ VECTOR("E:/books/6/ÊÏý/T.vwf")
 	}
 }
 
-VECTOR("E:/books/6/ÊÏý/TEST.vwf")
-{
-	ZOOM{
-		ZBEGIN = 0;
-		ZEND = 500000;
-		NUMERATOR = 1043;
-		DENOMINATOR = 500000;
-		TOP_INDEX = 0;
-	}
-	CLOCK{
-		PERIOD = 20000;
-		OFFSET = 0;
-		DUTY_CYCLE = 50;
-	}
-	RANDOM_VALUE{
-		INTERVAL_TYPE = HALF_GRID;
-	}
-	LINE{
-		SIGNAL = "CLOCK";
-		INDEX = 0;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "DATA_IN";
-		INDEX = 1;
-		FORMAT = T;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "DATA_IN[13]";
-		INDEX = 2;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "DATA_IN[12]";
-		INDEX = 3;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "DATA_IN[11]";
-		INDEX = 4;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "DATA_IN[10]";
-		INDEX = 5;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "DATA_IN[9]";
-		INDEX = 6;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "DATA_IN[8]";
-		INDEX = 7;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "DATA_IN[7]";
-		INDEX = 8;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "DATA_IN[6]";
-		INDEX = 9;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "DATA_IN[5]";
-		INDEX = 10;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "DATA_IN[4]";
-		INDEX = 11;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "DATA_IN[3]";
-		INDEX = 12;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "DATA_IN[2]";
-		INDEX = 13;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "DATA_IN[1]";
-		INDEX = 14;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "DATA_IN[0]";
-		INDEX = 15;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "DATA_OUT";
-		INDEX = 16;
-		FORMAT = T;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "DATA_OUT[13]";
-		INDEX = 17;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "DATA_OUT[12]";
-		INDEX = 18;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "DATA_OUT[11]";
-		INDEX = 19;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "DATA_OUT[10]";
-		INDEX = 20;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "DATA_OUT[9]";
-		INDEX = 21;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "DATA_OUT[8]";
-		INDEX = 22;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "DATA_OUT[7]";
-		INDEX = 23;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "DATA_OUT[6]";
-		INDEX = 24;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "DATA_OUT[5]";
-		INDEX = 25;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "DATA_OUT[4]";
-		INDEX = 26;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "DATA_OUT[3]";
-		INDEX = 27;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "DATA_OUT[2]";
-		INDEX = 28;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "DATA_OUT[1]";
-		INDEX = 29;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "DATA_OUT[0]";
-		INDEX = 30;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "ENABLE";
-		INDEX = 31;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "PUSH_POP";
-		INDEX = 32;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "SP";
-		INDEX = 33;
-		FORMAT = T;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "SP[3]";
-		INDEX = 34;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "SP[2]";
-		INDEX = 35;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "SP[1]";
-		INDEX = 36;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "SP[0]";
-		INDEX = 37;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-}
-
 VECTOR("E:/books/6/ÊÏý/GPR.vwf")
 {
 	ZOOM{
@@ -3438,6 +3115,329 @@ VECTOR("E:/books/6/ÊÏý/MEMORY.vwf")
 	}
 }
 
+VECTOR("E:/books/6/ÊÏý/TEST.vwf")
+{
+	ZOOM{
+		ZBEGIN = 0;
+		ZEND = 500000;
+		NUMERATOR = 1043;
+		DENOMINATOR = 500000;
+		TOP_INDEX = 0;
+	}
+	CLOCK{
+		PERIOD = 20000;
+		OFFSET = 0;
+		DUTY_CYCLE = 50;
+	}
+	RANDOM_VALUE{
+		INTERVAL_TYPE = HALF_GRID;
+	}
+	LINE{
+		SIGNAL = "CLOCK";
+		INDEX = 0;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "DATA_IN";
+		INDEX = 1;
+		FORMAT = T;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "DATA_IN[13]";
+		INDEX = 2;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "DATA_IN[12]";
+		INDEX = 3;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "DATA_IN[11]";
+		INDEX = 4;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "DATA_IN[10]";
+		INDEX = 5;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "DATA_IN[9]";
+		INDEX = 6;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "DATA_IN[8]";
+		INDEX = 7;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "DATA_IN[7]";
+		INDEX = 8;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "DATA_IN[6]";
+		INDEX = 9;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "DATA_IN[5]";
+		INDEX = 10;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "DATA_IN[4]";
+		INDEX = 11;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "DATA_IN[3]";
+		INDEX = 12;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "DATA_IN[2]";
+		INDEX = 13;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "DATA_IN[1]";
+		INDEX = 14;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "DATA_IN[0]";
+		INDEX = 15;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "DATA_OUT";
+		INDEX = 16;
+		FORMAT = T;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "DATA_OUT[13]";
+		INDEX = 17;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "DATA_OUT[12]";
+		INDEX = 18;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "DATA_OUT[11]";
+		INDEX = 19;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "DATA_OUT[10]";
+		INDEX = 20;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "DATA_OUT[9]";
+		INDEX = 21;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "DATA_OUT[8]";
+		INDEX = 22;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "DATA_OUT[7]";
+		INDEX = 23;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "DATA_OUT[6]";
+		INDEX = 24;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "DATA_OUT[5]";
+		INDEX = 25;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "DATA_OUT[4]";
+		INDEX = 26;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "DATA_OUT[3]";
+		INDEX = 27;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "DATA_OUT[2]";
+		INDEX = 28;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "DATA_OUT[1]";
+		INDEX = 29;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "DATA_OUT[0]";
+		INDEX = 30;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "ENABLE";
+		INDEX = 31;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "PUSH_POP";
+		INDEX = 32;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "SP";
+		INDEX = 33;
+		FORMAT = T;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "SP[3]";
+		INDEX = 34;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "SP[2]";
+		INDEX = 35;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "SP[1]";
+		INDEX = 36;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "SP[0]";
+		INDEX = 37;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+}
+
 VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 {
 	ZOOM{
@@ -3656,7 +3656,7 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "control[20]";
+		SIGNAL = "control[30]";
 		INDEX = 25;
 		FORMAT = E;
 		SCALE = 1;
@@ -3664,7 +3664,7 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "control[19]";
+		SIGNAL = "control[29]";
 		INDEX = 26;
 		FORMAT = E;
 		SCALE = 1;
@@ -3672,7 +3672,7 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "control[18]";
+		SIGNAL = "control[28]";
 		INDEX = 27;
 		FORMAT = E;
 		SCALE = 1;
@@ -3680,7 +3680,7 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "control[17]";
+		SIGNAL = "control[27]";
 		INDEX = 28;
 		FORMAT = E;
 		SCALE = 1;
@@ -3688,7 +3688,7 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "control[16]";
+		SIGNAL = "control[26]";
 		INDEX = 29;
 		FORMAT = E;
 		SCALE = 1;
@@ -3696,7 +3696,7 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "control[15]";
+		SIGNAL = "control[25]";
 		INDEX = 30;
 		FORMAT = E;
 		SCALE = 1;
@@ -3704,7 +3704,7 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "control[14]";
+		SIGNAL = "control[24]";
 		INDEX = 31;
 		FORMAT = E;
 		SCALE = 1;
@@ -3712,7 +3712,7 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "control[13]";
+		SIGNAL = "control[23]";
 		INDEX = 32;
 		FORMAT = E;
 		SCALE = 1;
@@ -3720,7 +3720,7 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "control[12]";
+		SIGNAL = "control[22]";
 		INDEX = 33;
 		FORMAT = E;
 		SCALE = 1;
@@ -3728,7 +3728,7 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "control[11]";
+		SIGNAL = "control[21]";
 		INDEX = 34;
 		FORMAT = E;
 		SCALE = 1;
@@ -3736,7 +3736,7 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "control[10]";
+		SIGNAL = "control[20]";
 		INDEX = 35;
 		FORMAT = E;
 		SCALE = 1;
@@ -3744,7 +3744,7 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "control[9]";
+		SIGNAL = "control[19]";
 		INDEX = 36;
 		FORMAT = E;
 		SCALE = 1;
@@ -3752,7 +3752,7 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "control[8]";
+		SIGNAL = "control[18]";
 		INDEX = 37;
 		FORMAT = E;
 		SCALE = 1;
@@ -3760,7 +3760,7 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "control[7]";
+		SIGNAL = "control[17]";
 		INDEX = 38;
 		FORMAT = E;
 		SCALE = 1;
@@ -3768,7 +3768,7 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "control[6]";
+		SIGNAL = "control[16]";
 		INDEX = 39;
 		FORMAT = E;
 		SCALE = 1;
@@ -3776,7 +3776,7 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "control[5]";
+		SIGNAL = "control[15]";
 		INDEX = 40;
 		FORMAT = E;
 		SCALE = 1;
@@ -3784,7 +3784,7 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "control[4]";
+		SIGNAL = "control[14]";
 		INDEX = 41;
 		FORMAT = E;
 		SCALE = 1;
@@ -3792,7 +3792,7 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "control[3]";
+		SIGNAL = "control[13]";
 		INDEX = 42;
 		FORMAT = E;
 		SCALE = 1;
@@ -3800,7 +3800,7 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "control[2]";
+		SIGNAL = "control[12]";
 		INDEX = 43;
 		FORMAT = E;
 		SCALE = 1;
@@ -3808,7 +3808,7 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "control[1]";
+		SIGNAL = "control[11]";
 		INDEX = 44;
 		FORMAT = E;
 		SCALE = 1;
@@ -3816,7 +3816,7 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "control[0]";
+		SIGNAL = "control[10]";
 		INDEX = 45;
 		FORMAT = E;
 		SCALE = 1;
@@ -3824,15 +3824,15 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "DATA_BUS";
+		SIGNAL = "control[9]";
 		INDEX = 46;
-		FORMAT = T;
+		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "DATA_BUS[13]";
+		SIGNAL = "control[8]";
 		INDEX = 47;
 		FORMAT = E;
 		SCALE = 1;
@@ -3840,7 +3840,7 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "DATA_BUS[12]";
+		SIGNAL = "control[7]";
 		INDEX = 48;
 		FORMAT = E;
 		SCALE = 1;
@@ -3848,7 +3848,7 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "DATA_BUS[11]";
+		SIGNAL = "control[6]";
 		INDEX = 49;
 		FORMAT = E;
 		SCALE = 1;
@@ -3856,7 +3856,7 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "DATA_BUS[10]";
+		SIGNAL = "control[5]";
 		INDEX = 50;
 		FORMAT = E;
 		SCALE = 1;
@@ -3864,7 +3864,7 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "DATA_BUS[9]";
+		SIGNAL = "control[4]";
 		INDEX = 51;
 		FORMAT = E;
 		SCALE = 1;
@@ -3872,7 +3872,7 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "DATA_BUS[8]";
+		SIGNAL = "control[3]";
 		INDEX = 52;
 		FORMAT = E;
 		SCALE = 1;
@@ -3880,7 +3880,7 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "DATA_BUS[7]";
+		SIGNAL = "control[2]";
 		INDEX = 53;
 		FORMAT = E;
 		SCALE = 1;
@@ -3888,7 +3888,7 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "DATA_BUS[6]";
+		SIGNAL = "control[1]";
 		INDEX = 54;
 		FORMAT = E;
 		SCALE = 1;
@@ -3896,7 +3896,7 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "DATA_BUS[5]";
+		SIGNAL = "control[0]";
 		INDEX = 55;
 		FORMAT = E;
 		SCALE = 1;
@@ -3904,15 +3904,15 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "DATA_BUS[4]";
+		SIGNAL = "DATA_BUS";
 		INDEX = 56;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "DATA_BUS[3]";
+		SIGNAL = "DATA_BUS[13]";
 		INDEX = 57;
 		FORMAT = E;
 		SCALE = 1;
@@ -3920,7 +3920,7 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "DATA_BUS[2]";
+		SIGNAL = "DATA_BUS[12]";
 		INDEX = 58;
 		FORMAT = E;
 		SCALE = 1;
@@ -3928,7 +3928,7 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "DATA_BUS[1]";
+		SIGNAL = "DATA_BUS[11]";
 		INDEX = 59;
 		FORMAT = E;
 		SCALE = 1;
@@ -3936,7 +3936,7 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "DATA_BUS[0]";
+		SIGNAL = "DATA_BUS[10]";
 		INDEX = 60;
 		FORMAT = E;
 		SCALE = 1;
@@ -3944,15 +3944,15 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "AR_OUT";
+		SIGNAL = "DATA_BUS[9]";
 		INDEX = 61;
-		FORMAT = T;
+		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "AR_OUT[11]";
+		SIGNAL = "DATA_BUS[8]";
 		INDEX = 62;
 		FORMAT = E;
 		SCALE = 1;
@@ -3960,7 +3960,7 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "AR_OUT[10]";
+		SIGNAL = "DATA_BUS[7]";
 		INDEX = 63;
 		FORMAT = E;
 		SCALE = 1;
@@ -3968,7 +3968,7 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "AR_OUT[9]";
+		SIGNAL = "DATA_BUS[6]";
 		INDEX = 64;
 		FORMAT = E;
 		SCALE = 1;
@@ -3976,7 +3976,7 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "AR_OUT[8]";
+		SIGNAL = "DATA_BUS[5]";
 		INDEX = 65;
 		FORMAT = E;
 		SCALE = 1;
@@ -3984,7 +3984,7 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "AR_OUT[7]";
+		SIGNAL = "DATA_BUS[4]";
 		INDEX = 66;
 		FORMAT = E;
 		SCALE = 1;
@@ -3992,7 +3992,7 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "AR_OUT[6]";
+		SIGNAL = "DATA_BUS[3]";
 		INDEX = 67;
 		FORMAT = E;
 		SCALE = 1;
@@ -4000,7 +4000,7 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "AR_OUT[5]";
+		SIGNAL = "DATA_BUS[2]";
 		INDEX = 68;
 		FORMAT = E;
 		SCALE = 1;
@@ -4008,7 +4008,7 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "AR_OUT[4]";
+		SIGNAL = "DATA_BUS[1]";
 		INDEX = 69;
 		FORMAT = E;
 		SCALE = 1;
@@ -4016,7 +4016,7 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "AR_OUT[3]";
+		SIGNAL = "DATA_BUS[0]";
 		INDEX = 70;
 		FORMAT = E;
 		SCALE = 1;
@@ -4024,15 +4024,15 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "AR_OUT[2]";
+		SIGNAL = "AR_OUT";
 		INDEX = 71;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "AR_OUT[1]";
+		SIGNAL = "AR_OUT[11]";
 		INDEX = 72;
 		FORMAT = E;
 		SCALE = 1;
@@ -4040,7 +4040,7 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "AR_OUT[0]";
+		SIGNAL = "AR_OUT[10]";
 		INDEX = 73;
 		FORMAT = E;
 		SCALE = 1;
@@ -4048,15 +4048,15 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "IP_OUT";
+		SIGNAL = "AR_OUT[9]";
 		INDEX = 74;
-		FORMAT = T;
+		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "IP_OUT[11]";
+		SIGNAL = "AR_OUT[8]";
 		INDEX = 75;
 		FORMAT = E;
 		SCALE = 1;
@@ -4064,7 +4064,7 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "IP_OUT[10]";
+		SIGNAL = "AR_OUT[7]";
 		INDEX = 76;
 		FORMAT = E;
 		SCALE = 1;
@@ -4072,7 +4072,7 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "IP_OUT[9]";
+		SIGNAL = "AR_OUT[6]";
 		INDEX = 77;
 		FORMAT = E;
 		SCALE = 1;
@@ -4080,7 +4080,7 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "IP_OUT[8]";
+		SIGNAL = "AR_OUT[5]";
 		INDEX = 78;
 		FORMAT = E;
 		SCALE = 1;
@@ -4088,7 +4088,7 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "IP_OUT[7]";
+		SIGNAL = "AR_OUT[4]";
 		INDEX = 79;
 		FORMAT = E;
 		SCALE = 1;
@@ -4096,7 +4096,7 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "IP_OUT[6]";
+		SIGNAL = "AR_OUT[3]";
 		INDEX = 80;
 		FORMAT = E;
 		SCALE = 1;
@@ -4104,7 +4104,7 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "IP_OUT[5]";
+		SIGNAL = "AR_OUT[2]";
 		INDEX = 81;
 		FORMAT = E;
 		SCALE = 1;
@@ -4112,7 +4112,7 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "IP_OUT[4]";
+		SIGNAL = "AR_OUT[1]";
 		INDEX = 82;
 		FORMAT = E;
 		SCALE = 1;
@@ -4120,7 +4120,7 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "IP_OUT[3]";
+		SIGNAL = "AR_OUT[0]";
 		INDEX = 83;
 		FORMAT = E;
 		SCALE = 1;
@@ -4128,15 +4128,15 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "IP_OUT[2]";
+		SIGNAL = "IP_OUT";
 		INDEX = 84;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "IP_OUT[1]";
+		SIGNAL = "IP_OUT[11]";
 		INDEX = 85;
 		FORMAT = E;
 		SCALE = 1;
@@ -4144,7 +4144,7 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "IP_OUT[0]";
+		SIGNAL = "IP_OUT[10]";
 		INDEX = 86;
 		FORMAT = E;
 		SCALE = 1;
@@ -4152,15 +4152,15 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "GPR_OUT";
+		SIGNAL = "IP_OUT[9]";
 		INDEX = 87;
-		FORMAT = T;
+		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "GPR_OUT[13]";
+		SIGNAL = "IP_OUT[8]";
 		INDEX = 88;
 		FORMAT = E;
 		SCALE = 1;
@@ -4168,7 +4168,7 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "GPR_OUT[12]";
+		SIGNAL = "IP_OUT[7]";
 		INDEX = 89;
 		FORMAT = E;
 		SCALE = 1;
@@ -4176,7 +4176,7 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "GPR_OUT[11]";
+		SIGNAL = "IP_OUT[6]";
 		INDEX = 90;
 		FORMAT = E;
 		SCALE = 1;
@@ -4184,7 +4184,7 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "GPR_OUT[10]";
+		SIGNAL = "IP_OUT[5]";
 		INDEX = 91;
 		FORMAT = E;
 		SCALE = 1;
@@ -4192,7 +4192,7 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "GPR_OUT[9]";
+		SIGNAL = "IP_OUT[4]";
 		INDEX = 92;
 		FORMAT = E;
 		SCALE = 1;
@@ -4200,7 +4200,7 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "GPR_OUT[8]";
+		SIGNAL = "IP_OUT[3]";
 		INDEX = 93;
 		FORMAT = E;
 		SCALE = 1;
@@ -4208,7 +4208,7 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "GPR_OUT[7]";
+		SIGNAL = "IP_OUT[2]";
 		INDEX = 94;
 		FORMAT = E;
 		SCALE = 1;
@@ -4216,7 +4216,7 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "GPR_OUT[6]";
+		SIGNAL = "IP_OUT[1]";
 		INDEX = 95;
 		FORMAT = E;
 		SCALE = 1;
@@ -4224,7 +4224,7 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "GPR_OUT[5]";
+		SIGNAL = "IP_OUT[0]";
 		INDEX = 96;
 		FORMAT = E;
 		SCALE = 1;
@@ -4232,15 +4232,15 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "GPR_OUT[4]";
+		SIGNAL = "GPR_OUT";
 		INDEX = 97;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "GPR_OUT[3]";
+		SIGNAL = "GPR_OUT[13]";
 		INDEX = 98;
 		FORMAT = E;
 		SCALE = 1;
@@ -4248,7 +4248,7 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "GPR_OUT[2]";
+		SIGNAL = "GPR_OUT[12]";
 		INDEX = 99;
 		FORMAT = E;
 		SCALE = 1;
@@ -4256,7 +4256,7 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "GPR_OUT[1]";
+		SIGNAL = "GPR_OUT[11]";
 		INDEX = 100;
 		FORMAT = E;
 		SCALE = 1;
@@ -4264,7 +4264,7 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "GPR_OUT[0]";
+		SIGNAL = "GPR_OUT[10]";
 		INDEX = 101;
 		FORMAT = E;
 		SCALE = 1;
@@ -4272,15 +4272,15 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "DR_OUT";
+		SIGNAL = "GPR_OUT[9]";
 		INDEX = 102;
-		FORMAT = T;
+		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "DR_OUT[13]";
+		SIGNAL = "GPR_OUT[8]";
 		INDEX = 103;
 		FORMAT = E;
 		SCALE = 1;
@@ -4288,7 +4288,7 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "DR_OUT[12]";
+		SIGNAL = "GPR_OUT[7]";
 		INDEX = 104;
 		FORMAT = E;
 		SCALE = 1;
@@ -4296,7 +4296,7 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "DR_OUT[11]";
+		SIGNAL = "GPR_OUT[6]";
 		INDEX = 105;
 		FORMAT = E;
 		SCALE = 1;
@@ -4304,7 +4304,7 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "DR_OUT[10]";
+		SIGNAL = "GPR_OUT[5]";
 		INDEX = 106;
 		FORMAT = E;
 		SCALE = 1;
@@ -4312,7 +4312,7 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "DR_OUT[9]";
+		SIGNAL = "GPR_OUT[4]";
 		INDEX = 107;
 		FORMAT = E;
 		SCALE = 1;
@@ -4320,7 +4320,7 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "DR_OUT[8]";
+		SIGNAL = "GPR_OUT[3]";
 		INDEX = 108;
 		FORMAT = E;
 		SCALE = 1;
@@ -4328,7 +4328,7 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "DR_OUT[7]";
+		SIGNAL = "GPR_OUT[2]";
 		INDEX = 109;
 		FORMAT = E;
 		SCALE = 1;
@@ -4336,7 +4336,7 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "DR_OUT[6]";
+		SIGNAL = "GPR_OUT[1]";
 		INDEX = 110;
 		FORMAT = E;
 		SCALE = 1;
@@ -4344,7 +4344,7 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "DR_OUT[5]";
+		SIGNAL = "GPR_OUT[0]";
 		INDEX = 111;
 		FORMAT = E;
 		SCALE = 1;
@@ -4352,15 +4352,15 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "DR_OUT[4]";
+		SIGNAL = "DR_OUT";
 		INDEX = 112;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "DR_OUT[3]";
+		SIGNAL = "DR_OUT[13]";
 		INDEX = 113;
 		FORMAT = E;
 		SCALE = 1;
@@ -4368,7 +4368,7 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "DR_OUT[2]";
+		SIGNAL = "DR_OUT[12]";
 		INDEX = 114;
 		FORMAT = E;
 		SCALE = 1;
@@ -4376,7 +4376,7 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "DR_OUT[1]";
+		SIGNAL = "DR_OUT[11]";
 		INDEX = 115;
 		FORMAT = E;
 		SCALE = 1;
@@ -4384,7 +4384,7 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "DR_OUT[0]";
+		SIGNAL = "DR_OUT[10]";
 		INDEX = 116;
 		FORMAT = E;
 		SCALE = 1;
@@ -4392,15 +4392,15 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "ADDRESS_BUS";
+		SIGNAL = "DR_OUT[9]";
 		INDEX = 117;
-		FORMAT = T;
+		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "ADDRESS_BUS[11]";
+		SIGNAL = "DR_OUT[8]";
 		INDEX = 118;
 		FORMAT = E;
 		SCALE = 1;
@@ -4408,7 +4408,7 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "ADDRESS_BUS[10]";
+		SIGNAL = "DR_OUT[7]";
 		INDEX = 119;
 		FORMAT = E;
 		SCALE = 1;
@@ -4416,7 +4416,7 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "ADDRESS_BUS[9]";
+		SIGNAL = "DR_OUT[6]";
 		INDEX = 120;
 		FORMAT = E;
 		SCALE = 1;
@@ -4424,7 +4424,7 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "ADDRESS_BUS[8]";
+		SIGNAL = "DR_OUT[5]";
 		INDEX = 121;
 		FORMAT = E;
 		SCALE = 1;
@@ -4432,7 +4432,7 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "ADDRESS_BUS[7]";
+		SIGNAL = "DR_OUT[4]";
 		INDEX = 122;
 		FORMAT = E;
 		SCALE = 1;
@@ -4440,7 +4440,7 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "ADDRESS_BUS[6]";
+		SIGNAL = "DR_OUT[3]";
 		INDEX = 123;
 		FORMAT = E;
 		SCALE = 1;
@@ -4448,7 +4448,7 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "ADDRESS_BUS[5]";
+		SIGNAL = "DR_OUT[2]";
 		INDEX = 124;
 		FORMAT = E;
 		SCALE = 1;
@@ -4456,7 +4456,7 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "ADDRESS_BUS[4]";
+		SIGNAL = "DR_OUT[1]";
 		INDEX = 125;
 		FORMAT = E;
 		SCALE = 1;
@@ -4464,7 +4464,7 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "ADDRESS_BUS[3]";
+		SIGNAL = "DR_OUT[0]";
 		INDEX = 126;
 		FORMAT = E;
 		SCALE = 1;
@@ -4472,15 +4472,15 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "ADDRESS_BUS[2]";
+		SIGNAL = "ADDRESS_BUS";
 		INDEX = 127;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "ADDRESS_BUS[1]";
+		SIGNAL = "ADDRESS_BUS[11]";
 		INDEX = 128;
 		FORMAT = E;
 		SCALE = 1;
@@ -4488,7 +4488,7 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "ADDRESS_BUS[0]";
+		SIGNAL = "ADDRESS_BUS[10]";
 		INDEX = 129;
 		FORMAT = E;
 		SCALE = 1;
@@ -4496,15 +4496,15 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "AR_R_OUT";
+		SIGNAL = "ADDRESS_BUS[9]";
 		INDEX = 130;
-		FORMAT = T;
+		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "AR_R_OUT[3]";
+		SIGNAL = "ADDRESS_BUS[8]";
 		INDEX = 131;
 		FORMAT = E;
 		SCALE = 1;
@@ -4512,7 +4512,7 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "AR_R_OUT[2]";
+		SIGNAL = "ADDRESS_BUS[7]";
 		INDEX = 132;
 		FORMAT = E;
 		SCALE = 1;
@@ -4520,7 +4520,7 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "AR_R_OUT[1]";
+		SIGNAL = "ADDRESS_BUS[6]";
 		INDEX = 133;
 		FORMAT = E;
 		SCALE = 1;
@@ -4528,7 +4528,7 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "AR_R_OUT[0]";
+		SIGNAL = "ADDRESS_BUS[5]";
 		INDEX = 134;
 		FORMAT = E;
 		SCALE = 1;
@@ -4536,15 +4536,15 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "GR8";
+		SIGNAL = "ADDRESS_BUS[4]";
 		INDEX = 135;
-		FORMAT = T;
+		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "GR8[13]";
+		SIGNAL = "ADDRESS_BUS[3]";
 		INDEX = 136;
 		FORMAT = E;
 		SCALE = 1;
@@ -4552,7 +4552,7 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "GR8[12]";
+		SIGNAL = "ADDRESS_BUS[2]";
 		INDEX = 137;
 		FORMAT = E;
 		SCALE = 1;
@@ -4560,7 +4560,7 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "GR8[11]";
+		SIGNAL = "ADDRESS_BUS[1]";
 		INDEX = 138;
 		FORMAT = E;
 		SCALE = 1;
@@ -4568,7 +4568,7 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "GR8[10]";
+		SIGNAL = "ADDRESS_BUS[0]";
 		INDEX = 139;
 		FORMAT = E;
 		SCALE = 1;
@@ -4576,15 +4576,15 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "GR8[9]";
+		SIGNAL = "AR_R_OUT";
 		INDEX = 140;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "GR8[8]";
+		SIGNAL = "AR_R_OUT[3]";
 		INDEX = 141;
 		FORMAT = E;
 		SCALE = 1;
@@ -4592,7 +4592,7 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "GR8[7]";
+		SIGNAL = "AR_R_OUT[2]";
 		INDEX = 142;
 		FORMAT = E;
 		SCALE = 1;
@@ -4600,7 +4600,7 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "GR8[6]";
+		SIGNAL = "AR_R_OUT[1]";
 		INDEX = 143;
 		FORMAT = E;
 		SCALE = 1;
@@ -4608,7 +4608,7 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "GR8[5]";
+		SIGNAL = "AR_R_OUT[0]";
 		INDEX = 144;
 		FORMAT = E;
 		SCALE = 1;
@@ -4616,15 +4616,15 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "GR8[4]";
+		SIGNAL = "SP_OUT";
 		INDEX = 145;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "GR8[3]";
+		SIGNAL = "SP_OUT[3]";
 		INDEX = 146;
 		FORMAT = E;
 		SCALE = 1;
@@ -4632,7 +4632,7 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "GR8[2]";
+		SIGNAL = "SP_OUT[2]";
 		INDEX = 147;
 		FORMAT = E;
 		SCALE = 1;
@@ -4640,7 +4640,7 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "GR8[1]";
+		SIGNAL = "SP_OUT[1]";
 		INDEX = 148;
 		FORMAT = E;
 		SCALE = 1;
@@ -4648,8 +4648,248 @@ VECTOR("E:/books/6/ÊÏý/KOMPIC.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "GR8[0]";
+		SIGNAL = "SP_OUT[0]";
 		INDEX = 149;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "STACK1";
+		INDEX = 150;
+		FORMAT = T;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "STACK1[13]";
+		INDEX = 151;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "STACK1[12]";
+		INDEX = 152;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "STACK1[11]";
+		INDEX = 153;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "STACK1[10]";
+		INDEX = 154;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "STACK1[9]";
+		INDEX = 155;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "STACK1[8]";
+		INDEX = 156;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "STACK1[7]";
+		INDEX = 157;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "STACK1[6]";
+		INDEX = 158;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "STACK1[5]";
+		INDEX = 159;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "STACK1[4]";
+		INDEX = 160;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "STACK1[3]";
+		INDEX = 161;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "STACK1[2]";
+		INDEX = 162;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "STACK1[1]";
+		INDEX = 163;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "STACK1[0]";
+		INDEX = 164;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "STACK2";
+		INDEX = 165;
+		FORMAT = T;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "STACK2[13]";
+		INDEX = 166;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "STACK2[12]";
+		INDEX = 167;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "STACK2[11]";
+		INDEX = 168;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "STACK2[10]";
+		INDEX = 169;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "STACK2[9]";
+		INDEX = 170;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "STACK2[8]";
+		INDEX = 171;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "STACK2[7]";
+		INDEX = 172;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "STACK2[6]";
+		INDEX = 173;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "STACK2[5]";
+		INDEX = 174;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "STACK2[4]";
+		INDEX = 175;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "STACK2[3]";
+		INDEX = 176;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "STACK2[2]";
+		INDEX = 177;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "STACK2[1]";
+		INDEX = 178;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "STACK2[0]";
+		INDEX = 179;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;

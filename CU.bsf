@@ -47,8 +47,8 @@ applicable agreement for further details.
 	(port
 		(pt 256 32)
 		(output)
-		(text "CONTROL[20..0]" (rect 0 0 93 14)(font "Arial" (font_size 8)))
-		(text "CONTROL[20..0]" (rect 142 27 235 41)(font "Arial" (font_size 8)))
+		(text "CONTROL[30..0]" (rect 0 0 93 14)(font "Arial" (font_size 8)))
+		(text "CONTROL[30..0]" (rect 142 27 235 41)(font "Arial" (font_size 8)))
 		(line (pt 256 32)(pt 240 32)(line_width 3))
 	)
 	(port
