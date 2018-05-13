@@ -15,15 +15,21 @@
 
 FUNCTION lpm_decode7 
 (
-	data[7..0]
+	data[7..0],
+	enable
 )
 
 RETURNS (
+	eq0,
 	eq1,
+	eq11,
+	eq12,
 	eq2,
 	eq3,
 	eq4,
 	eq5,
 	eq6,
-	eq7
+	eq7,
+	eq8,
+	eq9
 );

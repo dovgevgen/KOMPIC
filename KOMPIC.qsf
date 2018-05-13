@@ -65,8 +65,8 @@ set_global_assignment -name BDF_FILE TEST.bdf
 set_global_assignment -name BDF_FILE MEMORY.bdf
 set_global_assignment -name BDF_FILE GPR.bdf
 set_global_assignment -name BDF_FILE CU.bdf
-set_global_assignment -name BDF_FILE MOV_ADR_REG.bdf
 set_global_assignment -name BDF_FILE MOV_REG_ADR.bdf
+set_global_assignment -name BDF_FILE MOV_ADR_REG.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE DELAY.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE TEST.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE STACK_MEMORY_PARCER_TEST.vwf
@@ -132,6 +132,16 @@ set_global_assignment -name QIP_FILE lpm_add_sub5.qip
 set_global_assignment -name QIP_FILE lpm_or0.qip
 set_global_assignment -name QIP_FILE lpm_or1.qip
 set_global_assignment -name QIP_FILE lpm_decode7.qip
+set_global_assignment -name QIP_FILE lpm_or2.qip
+set_global_assignment -name QIP_FILE lpm_dff10.qip
+set_global_assignment -name QIP_FILE lpm_constant3.qip
+set_global_assignment -name QIP_FILE lpm_or3.qip
+set_global_assignment -name QIP_FILE lpm_or4.qip
+set_global_assignment -name QIP_FILE lpm_or5.qip
+set_global_assignment -name QIP_FILE lpm_or6.qip
+set_global_assignment -name QIP_FILE lpm_or7.qip
+set_global_assignment -name QIP_FILE lpm_or8.qip
+set_global_assignment -name QIP_FILE lpm_or9.qip
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"

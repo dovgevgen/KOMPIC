@@ -1659,6 +1659,8 @@ data0
 lpm_bustri2:inst5|lpm_bustri:lpm_bustri_component
 lpm_bustri2:inst9|lpm_bustri:lpm_bustri_component
 lpm_bustri2:inst11|lpm_bustri:lpm_bustri_component
+lpm_bustri2:inst19|lpm_bustri:lpm_bustri_component
+lpm_bustri2:inst21|lpm_bustri:lpm_bustri_component
 lpm_bustri2:inst25|lpm_bustri:lpm_bustri_component
 }
 # macro_sequence
@@ -6348,6 +6350,7 @@ STACK:inst2|STACK_MEMORY:inst1|lpm_dff2:inst6|lpm_ff:lpm_ff_component
 STACK:inst2|STACK_MEMORY:inst1|lpm_dff2:inst5|lpm_ff:lpm_ff_component
 STACK:inst2|STACK_MEMORY:inst1|lpm_dff2:inst10|lpm_ff:lpm_ff_component
 STACK:inst2|STACK_MEMORY:inst1|lpm_dff2:inst9|lpm_ff:lpm_ff_component
+GPR:inst3|lpm_dff2:inst8|lpm_ff:lpm_ff_component
 GPR:inst3|lpm_dff2:inst|lpm_ff:lpm_ff_component
 GPR:inst3|lpm_dff2:inst1|lpm_ff:lpm_ff_component
 GPR:inst3|lpm_dff2:inst2|lpm_ff:lpm_ff_component
@@ -6356,7 +6359,6 @@ GPR:inst3|lpm_dff2:inst4|lpm_ff:lpm_ff_component
 GPR:inst3|lpm_dff2:inst5|lpm_ff:lpm_ff_component
 GPR:inst3|lpm_dff2:inst6|lpm_ff:lpm_ff_component
 GPR:inst3|lpm_dff2:inst7|lpm_ff:lpm_ff_component
-GPR:inst3|lpm_dff2:inst8|lpm_ff:lpm_ff_component
 GPR:inst3|lpm_dff2:inst9|lpm_ff:lpm_ff_component
 GPR:inst3|lpm_dff2:inst10|lpm_ff:lpm_ff_component
 GPR:inst3|lpm_dff2:inst11|lpm_ff:lpm_ff_component
@@ -6486,6 +6488,7 @@ clock
 3
 }
 # hierarchies {
+REGISTERS:inst1|lpm_dff10:inst2|lpm_ff:lpm_ff_component
 REGISTERS:inst1|lpm_dff9:inst6|lpm_ff:lpm_ff_component
 REGISTERS:inst1|lpm_dff6:inst|lpm_ff:lpm_ff_component
 }
@@ -9335,6 +9338,7 @@ STACK:inst2|STACK_MEMORY:inst1|lpm_dff2:inst6
 STACK:inst2|STACK_MEMORY:inst1|lpm_dff2:inst5
 STACK:inst2|STACK_MEMORY:inst1|lpm_dff2:inst10
 STACK:inst2|STACK_MEMORY:inst1|lpm_dff2:inst9
+GPR:inst3|lpm_dff2:inst8
 GPR:inst3|lpm_dff2:inst
 GPR:inst3|lpm_dff2:inst1
 GPR:inst3|lpm_dff2:inst2
@@ -9343,7 +9347,6 @@ GPR:inst3|lpm_dff2:inst4
 GPR:inst3|lpm_dff2:inst5
 GPR:inst3|lpm_dff2:inst6
 GPR:inst3|lpm_dff2:inst7
-GPR:inst3|lpm_dff2:inst8
 GPR:inst3|lpm_dff2:inst9
 GPR:inst3|lpm_dff2:inst10
 GPR:inst3|lpm_dff2:inst11
@@ -10295,9 +10298,7 @@ data0
 3
 }
 # hierarchies {
-CU:inst6|MOV_ADR_REG:inst9|lpm_decode6:inst1|lpm_decode:lpm_decode_component|decode_8bf:auto_generated
 CU:inst6|lpm_decode4:inst1|lpm_decode:lpm_decode_component|decode_8bf:auto_generated
-CU:inst6|MOV_REG_ADR:inst24|lpm_decode7:inst1|lpm_decode:lpm_decode_component|decode_8bf:auto_generated
 }
 # macro_sequence
 
@@ -10581,6 +10582,8 @@ ON
 lpm_bustri2:inst5
 lpm_bustri2:inst9
 lpm_bustri2:inst11
+lpm_bustri2:inst19
+lpm_bustri2:inst21
 lpm_bustri2:inst25
 }
 # lmf
@@ -10797,7 +10800,9 @@ AUTO_ROM_RECOGNITION
 ON
 }
 # hierarchies {
+lpm_bustri5:inst15
 lpm_bustri5:inst14
+lpm_bustri5:inst26
 }
 # lmf
 |quartus|quartus|lmf|maxplus2.lmf
@@ -10851,7 +10856,9 @@ data0
 3
 }
 # hierarchies {
+lpm_bustri5:inst15|lpm_bustri:lpm_bustri_component
 lpm_bustri5:inst14|lpm_bustri:lpm_bustri_component
+lpm_bustri5:inst26|lpm_bustri:lpm_bustri_component
 }
 # macro_sequence
 
@@ -10898,8 +10905,8 @@ AUTO_ROM_RECOGNITION
 ON
 }
 # hierarchies {
-CU:inst6|MOV_ADR_REG:inst9|lpm_counter3:inst
 CU:inst6|lpm_counter3:inst
+CU:inst6|MOV_ADR_REG:inst9|lpm_counter3:inst
 CU:inst6|MOV_REG_ADR:inst24|lpm_counter3:inst
 }
 # lmf
@@ -11028,8 +11035,8 @@ aclr
 3
 }
 # hierarchies {
-CU:inst6|MOV_ADR_REG:inst9|lpm_counter3:inst|lpm_counter:lpm_counter_component
 CU:inst6|lpm_counter3:inst|lpm_counter:lpm_counter_component
+CU:inst6|MOV_ADR_REG:inst9|lpm_counter3:inst|lpm_counter:lpm_counter_component
 CU:inst6|MOV_REG_ADR:inst24|lpm_counter3:inst|lpm_counter:lpm_counter_component
 }
 # macro_sequence
@@ -11081,8 +11088,8 @@ aclr
 3
 }
 # hierarchies {
-CU:inst6|MOV_ADR_REG:inst9|lpm_counter3:inst|lpm_counter:lpm_counter_component|cntr_coi:auto_generated
 CU:inst6|lpm_counter3:inst|lpm_counter:lpm_counter_component|cntr_coi:auto_generated
+CU:inst6|MOV_ADR_REG:inst9|lpm_counter3:inst|lpm_counter:lpm_counter_component|cntr_coi:auto_generated
 CU:inst6|MOV_REG_ADR:inst24|lpm_counter3:inst|lpm_counter:lpm_counter_component|cntr_coi:auto_generated
 }
 # macro_sequence
@@ -11118,26 +11125,6 @@ CU:inst6|lpm_decode5:inst3
 # lmf
 |quartus|quartus|lmf|maxplus2.lmf
 a36c8ec425c8a2589af98b2d4daabc3
-# macro_sequence
-
-# end
-# entity
-REGISTERS
-# storage
-db|KOMPIC.(141).cnf
-db|KOMPIC.(141).cnf
-# case_insensitive
-# source_file
-registers.bdf
-3c70449d87e733f09d451bb2baffd31
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-REGISTERS:inst1
-}
 # macro_sequence
 
 # end
@@ -11239,9 +11226,6 @@ data1
 data0
 -1
 3
-}
-# hierarchies {
-CU:inst6|MOV_REG_ADR:inst24|lpm_decode7:inst1|lpm_decode:lpm_decode_component
 }
 # macro_sequence
 
@@ -11823,26 +11807,6 @@ DATA0_0
 
 # end
 # entity
-GPR
-# storage
-db|KOMPIC.(72).cnf
-db|KOMPIC.(72).cnf
-# case_insensitive
-# source_file
-gpr.bdf
-5b3ee3b2fa90a97983f5c0386ee696f8
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-GPR:inst3
-}
-# macro_sequence
-
-# end
-# entity
 lpm_decode3
 # storage
 db|KOMPIC.(119).cnf
@@ -12089,26 +12053,6 @@ AUTO
 }
 # hierarchies {
 MEMORY:inst4
-}
-# macro_sequence
-
-# end
-# entity
-KOMPIC
-# storage
-db|KOMPIC.(149).cnf
-db|KOMPIC.(149).cnf
-# case_insensitive
-# source_file
-kompic.bdf
-1bf8b61462f95c851cd28591d0a7a7d4
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-|
 }
 # macro_sequence
 
@@ -12367,39 +12311,6 @@ data0
 
 # end
 # entity
-lpm_decode6
-# storage
-db|KOMPIC.(122).cnf
-db|KOMPIC.(122).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-lpm_decode6.vhd
-2aaa3468179a925ae459e9cffe49fec
-5
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# hierarchies {
-CU:inst6|MOV_ADR_REG:inst9|lpm_decode6:inst1
-}
-# lmf
-|quartus|quartus|lmf|maxplus2.lmf
-a36c8ec425c8a2589af98b2d4daabc3
-# macro_sequence
-
-# end
-# entity
 lpm_decode
 # storage
 db|KOMPIC.(142).cnf
@@ -12504,29 +12415,6 @@ data0
 -1
 3
 }
-# hierarchies {
-CU:inst6|MOV_ADR_REG:inst9|lpm_decode6:inst1|lpm_decode:lpm_decode_component
-}
-# macro_sequence
-
-# end
-# entity
-MOV_ADR_REG
-# storage
-db|KOMPIC.(83).cnf
-db|KOMPIC.(83).cnf
-# case_insensitive
-# source_file
-mov_adr_reg.bdf
-e6ab614b5c502a71881e513ba1e6899
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-CU:inst6|MOV_ADR_REG:inst9
-}
 # macro_sequence
 
 # end
@@ -12556,39 +12444,6 @@ ON
 }
 # hierarchies {
 CU:inst6|lpm_decode4:inst1
-}
-# lmf
-|quartus|quartus|lmf|maxplus2.lmf
-a36c8ec425c8a2589af98b2d4daabc3
-# macro_sequence
-
-# end
-# entity
-lpm_or1
-# storage
-db|KOMPIC.(156).cnf
-db|KOMPIC.(156).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-lpm_or1.vhd
-6aef0dbcbc685d4b6a4a7aa26ccc20
-5
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# hierarchies {
-CU:inst6|lpm_or1:inst22
 }
 # lmf
 |quartus|quartus|lmf|maxplus2.lmf
@@ -12668,6 +12523,1597 @@ DATA0_0
 -1
 3
 }
+# macro_sequence
+
+# end
+# entity
+LPM_OR
+# storage
+db|KOMPIC.(160).cnf
+db|KOMPIC.(160).cnf
+# case_insensitive
+# source_file
+|quartus|quartus|libraries|megafunctions|lpm_or.tdf
+402a97de1620c916ae9f944ebd407944
+7
+# user_parameter {
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+LPM_WIDTH
+1
+PARAMETER_SIGNED_DEC
+USR
+LPM_SIZE
+4
+PARAMETER_SIGNED_DEC
+USR
+CARRY_CHAIN_LENGTH
+48
+CARRY_CHAIN_LENGTH
+USR
+CARRY_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+CASCADE_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+DEVICE_FAMILY
+Stratix II
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+RESULT0
+-1
+3
+DATA3_0
+-1
+3
+DATA2_0
+-1
+3
+DATA1_0
+-1
+3
+DATA0_0
+-1
+3
+}
+# hierarchies {
+CU:inst6|lpm_or4:inst5|lpm_or:lpm_or_component
+CU:inst6|lpm_or6:inst10|lpm_or:lpm_or_component
+CU:inst6|lpm_or3:inst4|lpm_or:lpm_or_component
+}
+# macro_sequence
+
+# end
+# entity
+LPM_OR
+# storage
+db|KOMPIC.(162).cnf
+db|KOMPIC.(162).cnf
+# case_insensitive
+# source_file
+|quartus|quartus|libraries|megafunctions|lpm_or.tdf
+402a97de1620c916ae9f944ebd407944
+7
+# user_parameter {
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+LPM_WIDTH
+1
+PARAMETER_SIGNED_DEC
+USR
+LPM_SIZE
+6
+PARAMETER_SIGNED_DEC
+USR
+CARRY_CHAIN_LENGTH
+48
+CARRY_CHAIN_LENGTH
+USR
+CARRY_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+CASCADE_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+DEVICE_FAMILY
+Stratix II
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+RESULT0
+-1
+3
+DATA5_0
+-1
+3
+DATA4_0
+-1
+3
+DATA3_0
+-1
+3
+DATA2_0
+-1
+3
+DATA1_0
+-1
+3
+DATA0_0
+-1
+3
+}
+# hierarchies {
+CU:inst6|lpm_or2:inst2|lpm_or:lpm_or_component
+}
+# macro_sequence
+
+# end
+# entity
+lpm_decode
+# storage
+db|KOMPIC.(163).cnf
+db|KOMPIC.(163).cnf
+# case_insensitive
+# source_file
+|quartus|quartus|libraries|megafunctions|lpm_decode.tdf
+bfce37ee9af3768dda7316c867798b
+7
+# user_parameter {
+LPM_WIDTH
+8
+PARAMETER_SIGNED_DEC
+USR
+LPM_DECODES
+256
+PARAMETER_SIGNED_DEC
+USR
+LPM_PIPELINE
+0
+PARAMETER_UNKNOWN
+DEF
+CASCADE_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+DEVICE_FAMILY
+Stratix II
+PARAMETER_UNKNOWN
+USR
+CBXI_PARAMETER
+decode_fvf
+PARAMETER_UNKNOWN
+USR
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+eq7
+-1
+3
+eq6
+-1
+3
+eq5
+-1
+3
+eq4
+-1
+3
+eq3
+-1
+3
+eq2
+-1
+3
+eq1
+-1
+3
+eq0
+-1
+3
+enable
+-1
+3
+data7
+-1
+3
+data6
+-1
+3
+data5
+-1
+3
+data4
+-1
+3
+data3
+-1
+3
+data2
+-1
+3
+data1
+-1
+3
+data0
+-1
+3
+}
+# macro_sequence
+
+# end
+# entity
+decode_fvf
+# storage
+db|KOMPIC.(164).cnf
+db|KOMPIC.(164).cnf
+# case_insensitive
+# source_file
+db|decode_fvf.tdf
+ccd284c1494fd30ab7afa817b6fa1c1
+7
+# used_port {
+eq99
+-1
+3
+eq98
+-1
+3
+eq97
+-1
+3
+eq96
+-1
+3
+eq95
+-1
+3
+eq94
+-1
+3
+eq93
+-1
+3
+eq92
+-1
+3
+eq91
+-1
+3
+eq90
+-1
+3
+eq9
+-1
+3
+eq89
+-1
+3
+eq88
+-1
+3
+eq87
+-1
+3
+eq86
+-1
+3
+eq85
+-1
+3
+eq84
+-1
+3
+eq83
+-1
+3
+eq82
+-1
+3
+eq81
+-1
+3
+eq80
+-1
+3
+eq8
+-1
+3
+eq79
+-1
+3
+eq78
+-1
+3
+eq77
+-1
+3
+eq76
+-1
+3
+eq75
+-1
+3
+eq74
+-1
+3
+eq73
+-1
+3
+eq72
+-1
+3
+eq71
+-1
+3
+eq70
+-1
+3
+eq7
+-1
+3
+eq69
+-1
+3
+eq68
+-1
+3
+eq67
+-1
+3
+eq66
+-1
+3
+eq65
+-1
+3
+eq64
+-1
+3
+eq63
+-1
+3
+eq62
+-1
+3
+eq61
+-1
+3
+eq60
+-1
+3
+eq6
+-1
+3
+eq59
+-1
+3
+eq58
+-1
+3
+eq57
+-1
+3
+eq56
+-1
+3
+eq55
+-1
+3
+eq54
+-1
+3
+eq53
+-1
+3
+eq52
+-1
+3
+eq51
+-1
+3
+eq50
+-1
+3
+eq5
+-1
+3
+eq49
+-1
+3
+eq48
+-1
+3
+eq47
+-1
+3
+eq46
+-1
+3
+eq45
+-1
+3
+eq44
+-1
+3
+eq43
+-1
+3
+eq42
+-1
+3
+eq41
+-1
+3
+eq40
+-1
+3
+eq4
+-1
+3
+eq39
+-1
+3
+eq38
+-1
+3
+eq37
+-1
+3
+eq36
+-1
+3
+eq35
+-1
+3
+eq34
+-1
+3
+eq33
+-1
+3
+eq32
+-1
+3
+eq31
+-1
+3
+eq30
+-1
+3
+eq3
+-1
+3
+eq29
+-1
+3
+eq28
+-1
+3
+eq27
+-1
+3
+eq26
+-1
+3
+eq255
+-1
+3
+eq254
+-1
+3
+eq253
+-1
+3
+eq252
+-1
+3
+eq251
+-1
+3
+eq250
+-1
+3
+eq25
+-1
+3
+eq249
+-1
+3
+eq248
+-1
+3
+eq247
+-1
+3
+eq246
+-1
+3
+eq245
+-1
+3
+eq244
+-1
+3
+eq243
+-1
+3
+eq242
+-1
+3
+eq241
+-1
+3
+eq240
+-1
+3
+eq24
+-1
+3
+eq239
+-1
+3
+eq238
+-1
+3
+eq237
+-1
+3
+eq236
+-1
+3
+eq235
+-1
+3
+eq234
+-1
+3
+eq233
+-1
+3
+eq232
+-1
+3
+eq231
+-1
+3
+eq230
+-1
+3
+eq23
+-1
+3
+eq229
+-1
+3
+eq228
+-1
+3
+eq227
+-1
+3
+eq226
+-1
+3
+eq225
+-1
+3
+eq224
+-1
+3
+eq223
+-1
+3
+eq222
+-1
+3
+eq221
+-1
+3
+eq220
+-1
+3
+eq22
+-1
+3
+eq219
+-1
+3
+eq218
+-1
+3
+eq217
+-1
+3
+eq216
+-1
+3
+eq215
+-1
+3
+eq214
+-1
+3
+eq213
+-1
+3
+eq212
+-1
+3
+eq211
+-1
+3
+eq210
+-1
+3
+eq21
+-1
+3
+eq209
+-1
+3
+eq208
+-1
+3
+eq207
+-1
+3
+eq206
+-1
+3
+eq205
+-1
+3
+eq204
+-1
+3
+eq203
+-1
+3
+eq202
+-1
+3
+eq201
+-1
+3
+eq200
+-1
+3
+eq20
+-1
+3
+eq2
+-1
+3
+eq199
+-1
+3
+eq198
+-1
+3
+eq197
+-1
+3
+eq196
+-1
+3
+eq195
+-1
+3
+eq194
+-1
+3
+eq193
+-1
+3
+eq192
+-1
+3
+eq191
+-1
+3
+eq190
+-1
+3
+eq19
+-1
+3
+eq189
+-1
+3
+eq188
+-1
+3
+eq187
+-1
+3
+eq186
+-1
+3
+eq185
+-1
+3
+eq184
+-1
+3
+eq183
+-1
+3
+eq182
+-1
+3
+eq181
+-1
+3
+eq180
+-1
+3
+eq18
+-1
+3
+eq179
+-1
+3
+eq178
+-1
+3
+eq177
+-1
+3
+eq176
+-1
+3
+eq175
+-1
+3
+eq174
+-1
+3
+eq173
+-1
+3
+eq172
+-1
+3
+eq171
+-1
+3
+eq170
+-1
+3
+eq17
+-1
+3
+eq169
+-1
+3
+eq168
+-1
+3
+eq167
+-1
+3
+eq166
+-1
+3
+eq165
+-1
+3
+eq164
+-1
+3
+eq163
+-1
+3
+eq162
+-1
+3
+eq161
+-1
+3
+eq160
+-1
+3
+eq16
+-1
+3
+eq159
+-1
+3
+eq158
+-1
+3
+eq157
+-1
+3
+eq156
+-1
+3
+eq155
+-1
+3
+eq154
+-1
+3
+eq153
+-1
+3
+eq152
+-1
+3
+eq151
+-1
+3
+eq150
+-1
+3
+eq15
+-1
+3
+eq149
+-1
+3
+eq148
+-1
+3
+eq147
+-1
+3
+eq146
+-1
+3
+eq145
+-1
+3
+eq144
+-1
+3
+eq143
+-1
+3
+eq142
+-1
+3
+eq141
+-1
+3
+eq140
+-1
+3
+eq14
+-1
+3
+eq139
+-1
+3
+eq138
+-1
+3
+eq137
+-1
+3
+eq136
+-1
+3
+eq135
+-1
+3
+eq134
+-1
+3
+eq133
+-1
+3
+eq132
+-1
+3
+eq131
+-1
+3
+eq130
+-1
+3
+eq13
+-1
+3
+eq129
+-1
+3
+eq128
+-1
+3
+eq127
+-1
+3
+eq126
+-1
+3
+eq125
+-1
+3
+eq124
+-1
+3
+eq123
+-1
+3
+eq122
+-1
+3
+eq121
+-1
+3
+eq120
+-1
+3
+eq12
+-1
+3
+eq119
+-1
+3
+eq118
+-1
+3
+eq117
+-1
+3
+eq116
+-1
+3
+eq115
+-1
+3
+eq114
+-1
+3
+eq113
+-1
+3
+eq112
+-1
+3
+eq111
+-1
+3
+eq110
+-1
+3
+eq11
+-1
+3
+eq109
+-1
+3
+eq108
+-1
+3
+eq107
+-1
+3
+eq106
+-1
+3
+eq105
+-1
+3
+eq104
+-1
+3
+eq103
+-1
+3
+eq102
+-1
+3
+eq101
+-1
+3
+eq100
+-1
+3
+eq10
+-1
+3
+eq1
+-1
+3
+eq0
+-1
+3
+enable
+-1
+3
+data7
+-1
+3
+data6
+-1
+3
+data5
+-1
+3
+data4
+-1
+3
+data3
+-1
+3
+data2
+-1
+3
+data1
+-1
+3
+data0
+-1
+3
+}
+# hierarchies {
+CU:inst6|MOV_ADR_REG:inst9|lpm_decode6:inst1|lpm_decode:lpm_decode_component|decode_fvf:auto_generated
+CU:inst6|MOV_REG_ADR:inst24|lpm_decode7:inst1|lpm_decode:lpm_decode_component|decode_fvf:auto_generated
+}
+# macro_sequence
+
+# end
+# entity
+LPM_OR
+# storage
+db|KOMPIC.(165).cnf
+db|KOMPIC.(165).cnf
+# case_insensitive
+# source_file
+|quartus|quartus|libraries|megafunctions|lpm_or.tdf
+402a97de1620c916ae9f944ebd407944
+7
+# user_parameter {
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+LPM_WIDTH
+1
+PARAMETER_SIGNED_DEC
+USR
+LPM_SIZE
+7
+PARAMETER_SIGNED_DEC
+USR
+CARRY_CHAIN_LENGTH
+48
+CARRY_CHAIN_LENGTH
+USR
+CARRY_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+CASCADE_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+DEVICE_FAMILY
+Stratix II
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+RESULT0
+-1
+3
+DATA6_0
+-1
+3
+DATA5_0
+-1
+3
+DATA4_0
+-1
+3
+DATA3_0
+-1
+3
+DATA2_0
+-1
+3
+DATA1_0
+-1
+3
+DATA0_0
+-1
+3
+}
+# macro_sequence
+
+# end
+# entity
+lpm_decode
+# storage
+db|KOMPIC.(156).cnf
+db|KOMPIC.(156).cnf
+# case_insensitive
+# source_file
+|quartus|quartus|libraries|megafunctions|lpm_decode.tdf
+bfce37ee9af3768dda7316c867798b
+7
+# user_parameter {
+LPM_WIDTH
+8
+PARAMETER_SIGNED_DEC
+USR
+LPM_DECODES
+256
+PARAMETER_SIGNED_DEC
+USR
+LPM_PIPELINE
+0
+PARAMETER_UNKNOWN
+DEF
+CASCADE_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+DEVICE_FAMILY
+Stratix II
+PARAMETER_UNKNOWN
+USR
+CBXI_PARAMETER
+decode_fvf
+PARAMETER_UNKNOWN
+USR
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+eq9
+-1
+3
+eq8
+-1
+3
+eq7
+-1
+3
+eq6
+-1
+3
+eq5
+-1
+3
+eq4
+-1
+3
+eq3
+-1
+3
+eq2
+-1
+3
+eq1
+-1
+3
+eq0
+-1
+3
+enable
+-1
+3
+data7
+-1
+3
+data6
+-1
+3
+data5
+-1
+3
+data4
+-1
+3
+data3
+-1
+3
+data2
+-1
+3
+data1
+-1
+3
+data0
+-1
+3
+}
+# hierarchies {
+CU:inst6|MOV_ADR_REG:inst9|lpm_decode6:inst1|lpm_decode:lpm_decode_component
+}
+# macro_sequence
+
+# end
+# entity
+LPM_OR
+# storage
+db|KOMPIC.(167).cnf
+db|KOMPIC.(167).cnf
+# case_insensitive
+# source_file
+|quartus|quartus|libraries|megafunctions|lpm_or.tdf
+402a97de1620c916ae9f944ebd407944
+7
+# user_parameter {
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+LPM_WIDTH
+1
+PARAMETER_SIGNED_DEC
+USR
+LPM_SIZE
+8
+PARAMETER_SIGNED_DEC
+USR
+CARRY_CHAIN_LENGTH
+48
+CARRY_CHAIN_LENGTH
+USR
+CARRY_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+CASCADE_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+DEVICE_FAMILY
+Stratix II
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+RESULT0
+-1
+3
+DATA7_0
+-1
+3
+DATA6_0
+-1
+3
+DATA5_0
+-1
+3
+DATA4_0
+-1
+3
+DATA3_0
+-1
+3
+DATA2_0
+-1
+3
+DATA1_0
+-1
+3
+DATA0_0
+-1
+3
+}
+# macro_sequence
+
+# end
+# entity
+MOV_ADR_REG
+# storage
+db|KOMPIC.(83).cnf
+db|KOMPIC.(83).cnf
+# case_insensitive
+# source_file
+mov_adr_reg.bdf
+2e66ef3ab8e4c8d4157efebe2e38f22
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+CU:inst6|MOV_ADR_REG:inst9
+}
+# macro_sequence
+
+# end
+# entity
+lpm_decode6
+# storage
+db|KOMPIC.(122).cnf
+db|KOMPIC.(122).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+lpm_decode6.vhd
+9976b39fac2169695a30a6f5dff7f18
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+CU:inst6|MOV_ADR_REG:inst9|lpm_decode6:inst1
+}
+# lmf
+|quartus|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+REGISTERS
+# storage
+db|KOMPIC.(141).cnf
+db|KOMPIC.(141).cnf
+# case_insensitive
+# source_file
+registers.bdf
+3c9b2885f60972c551cfe3eb42e0f3
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+REGISTERS:inst1
+}
+# macro_sequence
+
+# end
+# entity
+lpm_dff10
+# storage
+db|KOMPIC.(149).cnf
+db|KOMPIC.(149).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+lpm_dff10.vhd
+75fa86681e7a4b8eb583a7a09ec8f978
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+REGISTERS:inst1|lpm_dff10:inst2
+}
+# lmf
+|quartus|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+lpm_or1
+# storage
+db|KOMPIC.(166).cnf
+db|KOMPIC.(166).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+lpm_or1.vhd
+38c6c6ce365dd0cf7df87c2f317e82a3
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+CU:inst6|lpm_or1:inst22
+}
+# lmf
+|quartus|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+LPM_OR
+# storage
+db|KOMPIC.(168).cnf
+db|KOMPIC.(168).cnf
+# case_insensitive
+# source_file
+|quartus|quartus|libraries|megafunctions|lpm_or.tdf
+402a97de1620c916ae9f944ebd407944
+7
+# user_parameter {
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+LPM_WIDTH
+1
+PARAMETER_SIGNED_DEC
+USR
+LPM_SIZE
+10
+PARAMETER_SIGNED_DEC
+USR
+CARRY_CHAIN_LENGTH
+48
+CARRY_CHAIN_LENGTH
+USR
+CARRY_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+CASCADE_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+DEVICE_FAMILY
+Stratix II
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+RESULT0
+-1
+3
+DATA9_0
+-1
+3
+DATA8_0
+-1
+3
+DATA7_0
+-1
+3
+DATA6_0
+-1
+3
+DATA5_0
+-1
+3
+DATA4_0
+-1
+3
+DATA3_0
+-1
+3
+DATA2_0
+-1
+3
+DATA1_0
+-1
+3
+DATA0_0
+-1
+3
+}
 # hierarchies {
 CU:inst6|lpm_or1:inst22|lpm_or:lpm_or_component
 }
@@ -12675,34 +14121,573 @@ CU:inst6|lpm_or1:inst22|lpm_or:lpm_or_component
 
 # end
 # entity
-CU
+LPM_OR
 # storage
-db|KOMPIC.(110).cnf
-db|KOMPIC.(110).cnf
+db|KOMPIC.(170).cnf
+db|KOMPIC.(170).cnf
 # case_insensitive
 # source_file
-cu.bdf
-a85bbd797c2f21cd7365f651ad321131
+|quartus|quartus|libraries|megafunctions|lpm_or.tdf
+402a97de1620c916ae9f944ebd407944
+7
+# user_parameter {
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+LPM_WIDTH
+1
+PARAMETER_SIGNED_DEC
+USR
+LPM_SIZE
+3
+PARAMETER_SIGNED_DEC
+USR
+CARRY_CHAIN_LENGTH
+48
+CARRY_CHAIN_LENGTH
+USR
+CARRY_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+CASCADE_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+DEVICE_FAMILY
+Stratix II
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+RESULT0
+-1
+3
+DATA2_0
+-1
+3
+DATA1_0
+-1
+3
+DATA0_0
+-1
+3
+}
+# macro_sequence
+
+# end
+# entity
+lpm_constant3
+# storage
+db|KOMPIC.(173).cnf
+db|KOMPIC.(173).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+lpm_constant3.vhd
+6f11d65479ba2c272e872a09eb7421d
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+lpm_constant3:inst18
+}
+# lmf
+|quartus|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+lpm_constant
+# storage
+db|KOMPIC.(174).cnf
+db|KOMPIC.(174).cnf
+# case_insensitive
+# source_file
+|quartus|quartus|libraries|megafunctions|lpm_constant.tdf
+eb6dfbf4944a55f9ca719d52154e40e2
+7
+# user_parameter {
+LPM_WIDTH
+6
+PARAMETER_SIGNED_DEC
+USR
+LPM_CVALUE
+0
+PARAMETER_SIGNED_DEC
+USR
+ENABLE_RUNTIME_MOD
+NO
+PARAMETER_UNKNOWN
+USR
+CBXI_PARAMETER
+lpm_constant_of6
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+result5
+-1
+3
+result4
+-1
+3
+result3
+-1
+3
+result2
+-1
+3
+result1
+-1
+3
+result0
+-1
+3
+}
+# hierarchies {
+lpm_constant3:inst18|lpm_constant:lpm_constant_component
+}
+# macro_sequence
+
+# end
+# entity
+lpm_or5
+# storage
+db|KOMPIC.(158).cnf
+db|KOMPIC.(158).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+lpm_or5.vhd
+73686b6354e5fcb61cb6cae40cb8e7b
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+CU:inst6|lpm_or5:inst7
+}
+# lmf
+|quartus|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+LPM_OR
+# storage
+db|KOMPIC.(171).cnf
+db|KOMPIC.(171).cnf
+# case_insensitive
+# source_file
+|quartus|quartus|libraries|megafunctions|lpm_or.tdf
+402a97de1620c916ae9f944ebd407944
+7
+# user_parameter {
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+LPM_WIDTH
+1
+PARAMETER_SIGNED_DEC
+USR
+LPM_SIZE
+1
+PARAMETER_SIGNED_DEC
+USR
+CARRY_CHAIN_LENGTH
+48
+CARRY_CHAIN_LENGTH
+USR
+CARRY_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+CASCADE_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+DEVICE_FAMILY
+Stratix II
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+RESULT0
+-1
+3
+DATA0_0
+-1
+3
+}
+# hierarchies {
+CU:inst6|lpm_or5:inst7|lpm_or:lpm_or_component
+CU:inst6|lpm_or7:inst14|lpm_or:lpm_or_component
+CU:inst6|lpm_or8:inst28|lpm_or:lpm_or_component
+}
+# macro_sequence
+
+# end
+# entity
+lpm_or4
+# storage
+db|KOMPIC.(175).cnf
+db|KOMPIC.(175).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+lpm_or4.vhd
+39a85e89efa2795756cc50f62c6578c3
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+CU:inst6|lpm_or4:inst5
+}
+# lmf
+|quartus|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+lpm_or6
+# storage
+db|KOMPIC.(161).cnf
+db|KOMPIC.(161).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+lpm_or6.vhd
+e8a157f4b34296f5c7827a8b46a22a34
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+CU:inst6|lpm_or6:inst10
+}
+# lmf
+|quartus|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+lpm_or2
+# storage
+db|KOMPIC.(177).cnf
+db|KOMPIC.(177).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+lpm_or2.vhd
+2ef5c4b69a153dcb3c1a5e8d3a469135
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+CU:inst6|lpm_or2:inst2
+}
+# lmf
+|quartus|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+GPR
+# storage
+db|KOMPIC.(72).cnf
+db|KOMPIC.(72).cnf
+# case_insensitive
+# source_file
+gpr.bdf
+4e79f975729f553b56cf9463174623
 26
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-CU:inst6
+GPR:inst3
 }
+# macro_sequence
+
+# end
+# entity
+lpm_decode
+# storage
+db|KOMPIC.(176).cnf
+db|KOMPIC.(176).cnf
+# case_insensitive
+# source_file
+|quartus|quartus|libraries|megafunctions|lpm_decode.tdf
+bfce37ee9af3768dda7316c867798b
+7
+# user_parameter {
+LPM_WIDTH
+8
+PARAMETER_SIGNED_DEC
+USR
+LPM_DECODES
+256
+PARAMETER_SIGNED_DEC
+USR
+LPM_PIPELINE
+0
+PARAMETER_UNKNOWN
+DEF
+CASCADE_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+DEVICE_FAMILY
+Stratix II
+PARAMETER_UNKNOWN
+USR
+CBXI_PARAMETER
+decode_fvf
+PARAMETER_UNKNOWN
+USR
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+eq9
+-1
+3
+eq8
+-1
+3
+eq7
+-1
+3
+eq6
+-1
+3
+eq5
+-1
+3
+eq4
+-1
+3
+eq3
+-1
+3
+eq2
+-1
+3
+eq11
+-1
+3
+eq1
+-1
+3
+eq0
+-1
+3
+enable
+-1
+3
+data7
+-1
+3
+data6
+-1
+3
+data5
+-1
+3
+data4
+-1
+3
+data3
+-1
+3
+data2
+-1
+3
+data1
+-1
+3
+data0
+-1
+3
+}
+# macro_sequence
+
+# end
+# entity
+lpm_or7
+# storage
+db|KOMPIC.(178).cnf
+db|KOMPIC.(178).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+lpm_or7.vhd
+99d3ab24bceefa4b62d348d72a833275
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+CU:inst6|lpm_or7:inst14
+}
+# lmf
+|quartus|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+lpm_or8
+# storage
+db|KOMPIC.(179).cnf
+db|KOMPIC.(179).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+lpm_or8.vhd
+66dccc93cbebdea9807572c42828dfe
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+CU:inst6|lpm_or8:inst28
+}
+# lmf
+|quartus|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
 # macro_sequence
 
 # end
 # entity
 MOV_REG_ADR
 # storage
-db|KOMPIC.(158).cnf
-db|KOMPIC.(158).cnf
+db|KOMPIC.(110).cnf
+db|KOMPIC.(110).cnf
 # case_insensitive
 # source_file
 mov_reg_adr.bdf
-ecddebadac4fd97eb58ce1cccb9aa6e
+5578e33d55b2b5c395b5b137b497f5c
 26
 # internal_option {
 BLOCK_DESIGN_NAMING
@@ -12726,7 +14711,7 @@ ON
 # case_insensitive
 # source_file
 lpm_decode7.vhd
-8ae91538963f73be227dcbf557436628
+9cd59a6e5191604ae72d934a772e891e
 5
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -12748,10 +14733,308 @@ a36c8ec425c8a2589af98b2d4daabc3
 
 # end
 # entity
-altsyncram_nv61
+lpm_decode
+# storage
+db|KOMPIC.(181).cnf
+db|KOMPIC.(181).cnf
+# case_insensitive
+# source_file
+|quartus|quartus|libraries|megafunctions|lpm_decode.tdf
+bfce37ee9af3768dda7316c867798b
+7
+# user_parameter {
+LPM_WIDTH
+8
+PARAMETER_SIGNED_DEC
+USR
+LPM_DECODES
+256
+PARAMETER_SIGNED_DEC
+USR
+LPM_PIPELINE
+0
+PARAMETER_UNKNOWN
+DEF
+CASCADE_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+DEVICE_FAMILY
+Stratix II
+PARAMETER_UNKNOWN
+USR
+CBXI_PARAMETER
+decode_fvf
+PARAMETER_UNKNOWN
+USR
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+eq9
+-1
+3
+eq8
+-1
+3
+eq7
+-1
+3
+eq6
+-1
+3
+eq5
+-1
+3
+eq4
+-1
+3
+eq3
+-1
+3
+eq2
+-1
+3
+eq12
+-1
+3
+eq11
+-1
+3
+eq1
+-1
+3
+eq0
+-1
+3
+enable
+-1
+3
+data7
+-1
+3
+data6
+-1
+3
+data5
+-1
+3
+data4
+-1
+3
+data3
+-1
+3
+data2
+-1
+3
+data1
+-1
+3
+data0
+-1
+3
+}
+# hierarchies {
+CU:inst6|MOV_REG_ADR:inst24|lpm_decode7:inst1|lpm_decode:lpm_decode_component
+}
+# macro_sequence
+
+# end
+# entity
+lpm_or9
+# storage
+db|KOMPIC.(169).cnf
+db|KOMPIC.(169).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+lpm_or9.vhd
+929ff111c72c2f12b1b51fcf175ccb2
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+CU:inst6|lpm_or9:inst29
+}
+# lmf
+|quartus|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+LPM_OR
+# storage
+db|KOMPIC.(182).cnf
+db|KOMPIC.(182).cnf
+# case_insensitive
+# source_file
+|quartus|quartus|libraries|megafunctions|lpm_or.tdf
+402a97de1620c916ae9f944ebd407944
+7
+# user_parameter {
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+LPM_WIDTH
+1
+PARAMETER_SIGNED_DEC
+USR
+LPM_SIZE
+2
+PARAMETER_SIGNED_DEC
+USR
+CARRY_CHAIN_LENGTH
+48
+CARRY_CHAIN_LENGTH
+USR
+CARRY_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+CASCADE_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+DEVICE_FAMILY
+Stratix II
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+RESULT0
+-1
+3
+DATA1_0
+-1
+3
+DATA0_0
+-1
+3
+}
+# hierarchies {
+CU:inst6|lpm_or9:inst29|lpm_or:lpm_or_component
+}
+# macro_sequence
+
+# end
+# entity
+lpm_or3
+# storage
+db|KOMPIC.(183).cnf
+db|KOMPIC.(183).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+lpm_or3.vhd
+ad8741dab5694adf533547e381539
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+CU:inst6|lpm_or3:inst4
+}
+# lmf
+|quartus|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+KOMPIC
+# storage
+db|KOMPIC.(180).cnf
+db|KOMPIC.(180).cnf
+# case_insensitive
+# source_file
+kompic.bdf
+e0e840c3b28440febc96b638efc0a824
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+CU
 # storage
 db|KOMPIC.(155).cnf
 db|KOMPIC.(155).cnf
+# case_insensitive
+# source_file
+cu.bdf
+75f0e52ad51a8bf6692d377766d4e64
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+CU:inst6
+}
+# macro_sequence
+
+# end
+# entity
+altsyncram_nv61
+# storage
+db|KOMPIC.(172).cnf
+db|KOMPIC.(172).cnf
 # case_insensitive
 # source_file
 db|altsyncram_nv61.tdf
@@ -12839,7 +15122,7 @@ address_a0
 }
 # memory_file {
 rom.hex
-dbe48c65866c4634a14be636de337efb
+7c365d8fc9b8774fa211c0509667ff38
 }
 # hierarchies {
 MEMORY:inst4|lpm_rom0:inst1|altsyncram:altsyncram_component|altsyncram_nv61:auto_generated
