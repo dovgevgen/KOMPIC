@@ -1,0 +1,141 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 16 16 224 240)
+	(text "REGISTERS" (rect 5 0 71 14)(font "Arial" (font_size 8)))
+	(text "inst" (rect 8 208 25 220)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "CLOCK" (rect 0 0 41 14)(font "Arial" (font_size 8)))
+		(text "CLOCK" (rect 21 27 62 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 1))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "SP_IN[3..0]" (rect 0 0 61 14)(font "Arial" (font_size 8)))
+		(text "SP_IN[3..0]" (rect 21 43 82 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "ENABLE_SP" (rect 0 0 69 14)(font "Arial" (font_size 8)))
+		(text "ENABLE_SP" (rect 21 59 90 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64)(line_width 1))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "IP_IN[11..0]" (rect 0 0 62 14)(font "Arial" (font_size 8)))
+		(text "IP_IN[11..0]" (rect 21 75 83 89)(font "Arial" (font_size 8)))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "ENABLE_IP" (rect 0 0 63 14)(font "Arial" (font_size 8)))
+		(text "ENABLE_IP" (rect 21 91 84 105)(font "Arial" (font_size 8)))
+		(line (pt 0 96)(pt 16 96)(line_width 1))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "IR_IN[3..0]" (rect 0 0 56 14)(font "Arial" (font_size 8)))
+		(text "IR_IN[3..0]" (rect 21 107 77 121)(font "Arial" (font_size 8)))
+		(line (pt 0 112)(pt 16 112)(line_width 3))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "ENABLE_IR" (rect 0 0 64 14)(font "Arial" (font_size 8)))
+		(text "ENABLE_IR" (rect 21 123 85 137)(font "Arial" (font_size 8)))
+		(line (pt 0 128)(pt 16 128)(line_width 1))
+	)
+	(port
+		(pt 0 144)
+		(input)
+		(text "AR_IN[11..0]" (rect 0 0 70 14)(font "Arial" (font_size 8)))
+		(text "AR_IN[11..0]" (rect 21 139 91 153)(font "Arial" (font_size 8)))
+		(line (pt 0 144)(pt 16 144)(line_width 3))
+	)
+	(port
+		(pt 0 160)
+		(input)
+		(text "ENABLE_AR" (rect 0 0 71 14)(font "Arial" (font_size 8)))
+		(text "ENABLE_AR" (rect 21 155 92 169)(font "Arial" (font_size 8)))
+		(line (pt 0 160)(pt 16 160)(line_width 1))
+	)
+	(port
+		(pt 0 176)
+		(input)
+		(text "DR_IN[13..0]" (rect 0 0 69 14)(font "Arial" (font_size 8)))
+		(text "DR_IN[13..0]" (rect 21 171 90 185)(font "Arial" (font_size 8)))
+		(line (pt 0 176)(pt 16 176)(line_width 3))
+	)
+	(port
+		(pt 0 192)
+		(input)
+		(text "ENABLE_DR" (rect 0 0 70 14)(font "Arial" (font_size 8)))
+		(text "ENABLE_DR" (rect 21 187 91 201)(font "Arial" (font_size 8)))
+		(line (pt 0 192)(pt 16 192)(line_width 1))
+	)
+	(port
+		(pt 208 32)
+		(output)
+		(text "SP_OUT[3..0]" (rect 0 0 75 14)(font "Arial" (font_size 8)))
+		(text "SP_OUT[3..0]" (rect 112 27 187 41)(font "Arial" (font_size 8)))
+		(line (pt 208 32)(pt 192 32)(line_width 3))
+	)
+	(port
+		(pt 208 48)
+		(output)
+		(text "IP_OUT[11..0]" (rect 0 0 76 14)(font "Arial" (font_size 8)))
+		(text "IP_OUT[11..0]" (rect 111 43 187 57)(font "Arial" (font_size 8)))
+		(line (pt 208 48)(pt 192 48)(line_width 3))
+	)
+	(port
+		(pt 208 64)
+		(output)
+		(text "IR_OUT[3..0]" (rect 0 0 70 14)(font "Arial" (font_size 8)))
+		(text "IR_OUT[3..0]" (rect 117 59 187 73)(font "Arial" (font_size 8)))
+		(line (pt 208 64)(pt 192 64)(line_width 3))
+	)
+	(port
+		(pt 208 80)
+		(output)
+		(text "AR_OUT[11..0]" (rect 0 0 84 14)(font "Arial" (font_size 8)))
+		(text "AR_OUT[11..0]" (rect 103 75 187 89)(font "Arial" (font_size 8)))
+		(line (pt 208 80)(pt 192 80)(line_width 3))
+	)
+	(port
+		(pt 208 96)
+		(output)
+		(text "DR_OUT[13..0]" (rect 0 0 83 14)(font "Arial" (font_size 8)))
+		(text "DR_OUT[13..0]" (rect 104 91 187 105)(font "Arial" (font_size 8)))
+		(line (pt 208 96)(pt 192 96)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 192 208)(line_width 1))
+	)
+)
