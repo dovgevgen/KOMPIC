@@ -3,11 +3,9 @@
 	<PROJECT NAME="KOMPIC">
 		<CBX_INST_ENTRY INSTANCE_NAME="|KOMPIC|CU:inst6|POP:inst41|lpm_counter3:inst|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_coi.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|KOMPIC|STACK:inst2|lpm_decode1:inst4|lpm_decode:lpm_decode_component" CBX_FILE_NAME="decode_trf.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|KOMPIC|CU:inst6|PUSH:inst36|lpm_decode9:inst2|lpm_decode:lpm_decode_component" CBX_FILE_NAME="decode_fvf.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|KOMPIC|CU:inst6|lpm_decode5:inst3|lpm_decode:lpm_decode_component" CBX_FILE_NAME="decode_ltf.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|KOMPIC|GPR:inst3|lpm_decode3:inst16|lpm_decode:lpm_decode_component" CBX_FILE_NAME="decode_e9f.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|KOMPIC|STACK:inst2|lpm_add_sub4:inst|lpm_add_sub:lpm_add_sub_component" CBX_FILE_NAME="add_sub_tmg.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|KOMPIC|ALU:inst|OP_ADDC:inst1|lpm_add_sub3:inst1|lpm_add_sub:lpm_add_sub_component" CBX_FILE_NAME="add_sub_7lh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|KOMPIC|CU:inst6|JBZ:inst44|lpm_counter3:inst|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_coi.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|KOMPIC|CU:inst6|JMP:inst25|lpm_counter3:inst|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_coi.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|KOMPIC|CU:inst6|MOV_ADR_REG:inst9|lpm_counter3:inst|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_coi.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|KOMPIC|CU:inst6|MOV_ADR_REG:inst9|lpm_decode6:inst1|lpm_decode:lpm_decode_component" CBX_FILE_NAME="decode_fvf.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|KOMPIC|lpm_constant2:inst7|lpm_constant:lpm_constant_component" CBX_FILE_NAME="lpm_constant_4e6.tdf"/>
@@ -28,11 +26,17 @@
 		<CBX_INST_ENTRY INSTANCE_NAME="|KOMPIC|ALU:inst|lpm_compare0:inst17|lpm_compare:lpm_compare_component" CBX_FILE_NAME="cmpr_7pi.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|KOMPIC|CU:inst6|lpm_add_sub5:inst15|lpm_add_sub:lpm_add_sub_component" CBX_FILE_NAME="add_sub_dqh.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|KOMPIC|CU:inst6|lpm_decode4:inst1|lpm_decode:lpm_decode_component" CBX_FILE_NAME="decode_8bf.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|KOMPIC|CU:inst6|JBZ:inst44|lpm_decode13:inst8|lpm_decode:lpm_decode_component" CBX_FILE_NAME="decode_fvf.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|KOMPIC|CU:inst6|MOV_REG_ADR:inst24|lpm_counter3:inst|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_coi.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|KOMPIC|CU:inst6|MOV_REG_lADRl:inst30|lpm_decode8:inst2|lpm_decode:lpm_decode_component" CBX_FILE_NAME="decode_fvf.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|KOMPIC|MEMORY:inst4|lpm_rom0:inst1|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_nv61.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|KOMPIC|CU:inst6|JMP:inst25|lpm_decode12:inst2|lpm_decode:lpm_decode_component" CBX_FILE_NAME="decode_fvf.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|KOMPIC|CU:inst6|MOV_REG_ADR:inst24|lpm_decode7:inst1|lpm_decode:lpm_decode_component" CBX_FILE_NAME="decode_fvf.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|KOMPIC|CU:inst6|lpm_counter3:inst|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_coi.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|KOMPIC|STACK:inst2|lpm_compare2:inst2|lpm_compare:lpm_compare_component" CBX_FILE_NAME="cmpr_p8j.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|KOMPIC|CU:inst6|PUSH:inst36|lpm_decode9:inst2|lpm_decode:lpm_decode_component" CBX_FILE_NAME="decode_fvf.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|KOMPIC|CU:inst6|lpm_decode5:inst3|lpm_decode:lpm_decode_component" CBX_FILE_NAME="decode_ltf.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|KOMPIC|GPR:inst3|lpm_decode3:inst16|lpm_decode:lpm_decode_component" CBX_FILE_NAME="decode_e9f.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|KOMPIC|STACK:inst2|lpm_add_sub4:inst|lpm_add_sub:lpm_add_sub_component" CBX_FILE_NAME="add_sub_tmg.tdf"/>
 	</PROJECT>
 </LOG_ROOT>
