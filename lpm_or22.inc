@@ -16,7 +16,9 @@
 FUNCTION lpm_or22 
 (
 	data0,
-	data1
+	data1,
+	data2,
+	data3
 )
 
 RETURNS (

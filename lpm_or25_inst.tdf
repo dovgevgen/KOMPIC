@@ -1,7 +1,9 @@
 (
 	result_sig
 ) = lpm_or25	(
-	.data0 = data0_sig
+	.data0 = data0_sig,
+	.data1 = data1_sig,
+	.data2 = data2_sig
 )
 RETURNS (
 	.result

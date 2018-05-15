@@ -40,6 +40,16 @@ component lpm_or1
 		data28		: IN STD_LOGIC ;
 		data29		: IN STD_LOGIC ;
 		data3		: IN STD_LOGIC ;
+		data30		: IN STD_LOGIC ;
+		data31		: IN STD_LOGIC ;
+		data32		: IN STD_LOGIC ;
+		data33		: IN STD_LOGIC ;
+		data34		: IN STD_LOGIC ;
+		data35		: IN STD_LOGIC ;
+		data36		: IN STD_LOGIC ;
+		data37		: IN STD_LOGIC ;
+		data38		: IN STD_LOGIC ;
+		data39		: IN STD_LOGIC ;
 		data4		: IN STD_LOGIC ;
 		data5		: IN STD_LOGIC ;
 		data6		: IN STD_LOGIC ;

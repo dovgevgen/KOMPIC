@@ -5424,6 +5424,8 @@ CU:inst6|lpm_bustri4:inst42
 CU:inst6|lpm_bustri4:inst43
 CU:inst6|lpm_bustri4:inst45
 CU:inst6|lpm_bustri4:inst48
+CU:inst6|lpm_bustri4:inst56
+CU:inst6|lpm_bustri4:inst58
 }
 # lmf
 |quartus|quartus|lmf|maxplus2.lmf
@@ -5509,6 +5511,8 @@ CU:inst6|lpm_bustri4:inst42|lpm_bustri:lpm_bustri_component
 CU:inst6|lpm_bustri4:inst43|lpm_bustri:lpm_bustri_component
 CU:inst6|lpm_bustri4:inst45|lpm_bustri:lpm_bustri_component
 CU:inst6|lpm_bustri4:inst48|lpm_bustri:lpm_bustri_component
+CU:inst6|lpm_bustri4:inst56|lpm_bustri:lpm_bustri_component
+CU:inst6|lpm_bustri4:inst58|lpm_bustri:lpm_bustri_component
 }
 # macro_sequence
 
@@ -10854,6 +10858,8 @@ CU:inst6|POP:inst41|lpm_counter3:inst
 CU:inst6|JMP:inst25|lpm_counter3:inst
 CU:inst6|JBZ:inst44|lpm_counter3:inst
 CU:inst6|ADDC_REG_REG:inst47|lpm_counter3:inst2
+CU:inst6|XOR_REG_REG:inst55|lpm_counter3:inst
+CU:inst6|NAND_REG_REG:inst57|lpm_counter3:inst
 }
 # lmf
 |quartus|quartus|lmf|maxplus2.lmf
@@ -10990,6 +10996,8 @@ CU:inst6|POP:inst41|lpm_counter3:inst|lpm_counter:lpm_counter_component
 CU:inst6|JMP:inst25|lpm_counter3:inst|lpm_counter:lpm_counter_component
 CU:inst6|JBZ:inst44|lpm_counter3:inst|lpm_counter:lpm_counter_component
 CU:inst6|ADDC_REG_REG:inst47|lpm_counter3:inst2|lpm_counter:lpm_counter_component
+CU:inst6|XOR_REG_REG:inst55|lpm_counter3:inst|lpm_counter:lpm_counter_component
+CU:inst6|NAND_REG_REG:inst57|lpm_counter3:inst|lpm_counter:lpm_counter_component
 }
 # macro_sequence
 
@@ -11049,6 +11057,8 @@ CU:inst6|POP:inst41|lpm_counter3:inst|lpm_counter:lpm_counter_component|cntr_coi
 CU:inst6|JMP:inst25|lpm_counter3:inst|lpm_counter:lpm_counter_component|cntr_coi:auto_generated
 CU:inst6|JBZ:inst44|lpm_counter3:inst|lpm_counter:lpm_counter_component|cntr_coi:auto_generated
 CU:inst6|ADDC_REG_REG:inst47|lpm_counter3:inst2|lpm_counter:lpm_counter_component|cntr_coi:auto_generated
+CU:inst6|XOR_REG_REG:inst55|lpm_counter3:inst|lpm_counter:lpm_counter_component|cntr_coi:auto_generated
+CU:inst6|NAND_REG_REG:inst57|lpm_counter3:inst|lpm_counter:lpm_counter_component|cntr_coi:auto_generated
 }
 # macro_sequence
 
@@ -12333,9 +12343,6 @@ DATA0_0
 -1
 3
 }
-# hierarchies {
-CU:inst6|lpm_or10:inst32|lpm_or:lpm_or_component
-}
 # macro_sequence
 
 # end
@@ -12409,8 +12416,8 @@ DATA0_0
 3
 }
 # hierarchies {
-CU:inst6|lpm_or14:inst38|lpm_or:lpm_or_component
-CU:inst6|lpm_or8:inst28|lpm_or:lpm_or_component
+CU:inst6|lpm_or22:inst50|lpm_or:lpm_or_component
+CU:inst6|lpm_or23:inst51|lpm_or:lpm_or_component
 }
 # macro_sequence
 
@@ -12491,7 +12498,7 @@ DATA0_0
 3
 }
 # hierarchies {
-CU:inst6|lpm_or11:inst33|lpm_or:lpm_or_component
+CU:inst6|lpm_or8:inst28|lpm_or:lpm_or_component
 }
 # macro_sequence
 
@@ -13420,6 +13427,8 @@ CU:inst6|POP:inst41|lpm_decode11:inst9|lpm_decode:lpm_decode_component|decode_fv
 CU:inst6|JMP:inst25|lpm_decode12:inst2|lpm_decode:lpm_decode_component|decode_fvf:auto_generated
 CU:inst6|JBZ:inst44|lpm_decode13:inst8|lpm_decode:lpm_decode_component|decode_fvf:auto_generated
 CU:inst6|ADDC_REG_REG:inst47|lpm_decode14:inst|lpm_decode:lpm_decode_component|decode_fvf:auto_generated
+CU:inst6|XOR_REG_REG:inst55|lpm_decode16:inst2|lpm_decode:lpm_decode_component|decode_fvf:auto_generated
+CU:inst6|NAND_REG_REG:inst57|lpm_decode17:inst2|lpm_decode:lpm_decode_component|decode_fvf:auto_generated
 }
 # macro_sequence
 
@@ -13503,7 +13512,7 @@ DATA0_0
 3
 }
 # hierarchies {
-CU:inst6|lpm_or7:inst14|lpm_or:lpm_or_component
+CU:inst6|lpm_or10:inst32|lpm_or:lpm_or_component
 }
 # macro_sequence
 
@@ -13707,8 +13716,8 @@ DATA0_0
 3
 }
 # hierarchies {
-CU:inst6|lpm_or9:inst29|lpm_or:lpm_or_component
 CU:inst6|lpm_or6:inst10|lpm_or:lpm_or_component
+CU:inst6|lpm_or14:inst38|lpm_or:lpm_or_component
 }
 # macro_sequence
 
@@ -13906,6 +13915,10 @@ DATA0_0
 -1
 3
 }
+# hierarchies {
+CU:inst6|lpm_or9:inst29|lpm_or:lpm_or_component
+CU:inst6|lpm_or11:inst33|lpm_or:lpm_or_component
+}
 # macro_sequence
 
 # end
@@ -13978,6 +13991,8 @@ DATA0_0
 # hierarchies {
 CU:inst6|lpm_or18:inst26|lpm_or:lpm_or_component
 CU:inst6|lpm_or19:inst27|lpm_or:lpm_or_component
+CU:inst6|lpm_or21:inst49|lpm_or:lpm_or_component
+CU:inst6|lpm_or24:inst52|lpm_or:lpm_or_component
 }
 # macro_sequence
 
@@ -14134,8 +14149,6 @@ CU:inst6|lpm_or13:inst35|lpm_or:lpm_or_component
 CU:inst6|lpm_or16:inst40|lpm_or:lpm_or_component
 CU:inst6|lpm_or17:inst19|lpm_or:lpm_or_component
 CU:inst6|lpm_or20:inst46|lpm_or:lpm_or_component
-CU:inst6|lpm_or21:inst49|lpm_or:lpm_or_component
-CU:inst6|lpm_or24:inst52|lpm_or:lpm_or_component
 }
 # macro_sequence
 
@@ -14497,8 +14510,6 @@ DATA0_0
 3
 }
 # hierarchies {
-CU:inst6|lpm_or22:inst50|lpm_or:lpm_or_component
-CU:inst6|lpm_or23:inst51|lpm_or:lpm_or_component
 CU:inst6|lpm_or12:inst34|lpm_or:lpm_or_component
 CU:inst6|lpm_or5:inst7|lpm_or:lpm_or_component
 CU:inst6|lpm_or15:inst39|lpm_or:lpm_or_component
@@ -14795,6 +14806,9 @@ DATA10_0
 DATA0_0
 -1
 3
+}
+# hierarchies {
+CU:inst6|lpm_or3:inst4|lpm_or:lpm_or_component
 }
 # macro_sequence
 
@@ -16111,9 +16125,6 @@ DATA0_0
 -1
 3
 }
-# hierarchies {
-CU:inst6|lpm_or2:inst2|lpm_or:lpm_or_component
-}
 # macro_sequence
 
 # end
@@ -16209,9 +16220,6 @@ DATA10_0
 DATA0_0
 -1
 3
-}
-# hierarchies {
-CU:inst6|lpm_or3:inst4|lpm_or:lpm_or_component
 }
 # macro_sequence
 
@@ -17122,6 +17130,9 @@ DATA0_0
 -1
 3
 }
+# hierarchies {
+CU:inst6|lpm_or2:inst2|lpm_or:lpm_or_component
+}
 # macro_sequence
 
 # end
@@ -17761,39 +17772,6 @@ data0
 
 # end
 # entity
-lpm_or1
-# storage
-db|KOMPIC.(202).cnf
-db|KOMPIC.(202).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-lpm_or1.vhd
-96203d28c05b8b7abb2e596ec6ce47
-5
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# hierarchies {
-CU:inst6|lpm_or1:inst22
-}
-# lmf
-|quartus|quartus|lmf|maxplus2.lmf
-a36c8ec425c8a2589af98b2d4daabc3
-# macro_sequence
-
-# end
-# entity
 LPM_OR
 # storage
 db|KOMPIC.(207).cnf
@@ -17940,75 +17918,6 @@ DATA0_0
 -1
 3
 }
-# hierarchies {
-CU:inst6|lpm_or1:inst22|lpm_or:lpm_or_component
-}
-# macro_sequence
-
-# end
-# entity
-lpm_or2
-# storage
-db|KOMPIC.(220).cnf
-db|KOMPIC.(220).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-lpm_or2.vhd
-77e5325aee9c0b941548dd9c94487e9
-5
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# hierarchies {
-CU:inst6|lpm_or2:inst2
-}
-# lmf
-|quartus|quartus|lmf|maxplus2.lmf
-a36c8ec425c8a2589af98b2d4daabc3
-# macro_sequence
-
-# end
-# entity
-lpm_or21
-# storage
-db|KOMPIC.(227).cnf
-db|KOMPIC.(227).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-lpm_or21.vhd
-804fdc87399c1461fc768a34cdb1a91
-5
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# hierarchies {
-CU:inst6|lpm_or21:inst49
-}
-# lmf
-|quartus|quartus|lmf|maxplus2.lmf
-a36c8ec425c8a2589af98b2d4daabc3
 # macro_sequence
 
 # end
@@ -18108,138 +18017,6 @@ data0
 -1
 3
 }
-# macro_sequence
-
-# end
-# entity
-lpm_or22
-# storage
-db|KOMPIC.(235).cnf
-db|KOMPIC.(235).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-lpm_or22.vhd
-276122943e896f90a752fd28d5ca3e
-5
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# hierarchies {
-CU:inst6|lpm_or22:inst50
-}
-# lmf
-|quartus|quartus|lmf|maxplus2.lmf
-a36c8ec425c8a2589af98b2d4daabc3
-# macro_sequence
-
-# end
-# entity
-lpm_or23
-# storage
-db|KOMPIC.(236).cnf
-db|KOMPIC.(236).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-lpm_or23.vhd
-c5bc812ecc45ca444bcd4999c7e71450
-5
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# hierarchies {
-CU:inst6|lpm_or23:inst51
-}
-# lmf
-|quartus|quartus|lmf|maxplus2.lmf
-a36c8ec425c8a2589af98b2d4daabc3
-# macro_sequence
-
-# end
-# entity
-lpm_or10
-# storage
-db|KOMPIC.(208).cnf
-db|KOMPIC.(208).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-lpm_or10.vhd
-4467a9928a87a6a1194261463c54c499
-5
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# hierarchies {
-CU:inst6|lpm_or10:inst32
-}
-# lmf
-|quartus|quartus|lmf|maxplus2.lmf
-a36c8ec425c8a2589af98b2d4daabc3
-# macro_sequence
-
-# end
-# entity
-lpm_or11
-# storage
-db|KOMPIC.(232).cnf
-db|KOMPIC.(232).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-lpm_or11.vhd
-11346a879628e979d5fd83b56989c
-5
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# hierarchies {
-CU:inst6|lpm_or11:inst33
-}
-# lmf
-|quartus|quartus|lmf|maxplus2.lmf
-a36c8ec425c8a2589af98b2d4daabc3
 # macro_sequence
 
 # end
@@ -18501,97 +18278,6 @@ data0
 
 # end
 # entity
-lpm_or14
-# storage
-db|KOMPIC.(197).cnf
-db|KOMPIC.(197).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-lpm_or14.vhd
-69874b5a939c78b24922e97e4fcb43fa
-5
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# hierarchies {
-CU:inst6|lpm_or14:inst38
-}
-# lmf
-|quartus|quartus|lmf|maxplus2.lmf
-a36c8ec425c8a2589af98b2d4daabc3
-# macro_sequence
-
-# end
-# entity
-lpm_or24
-# storage
-db|KOMPIC.(240).cnf
-db|KOMPIC.(240).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-lpm_or24.vhd
-08fb8aa191f3c30982d6a37c1d1356
-5
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# hierarchies {
-CU:inst6|lpm_or24:inst52
-}
-# lmf
-|quartus|quartus|lmf|maxplus2.lmf
-a36c8ec425c8a2589af98b2d4daabc3
-# macro_sequence
-
-# end
-# entity
-lpm_or25
-# storage
-db|KOMPIC.(241).cnf
-db|KOMPIC.(241).cnf
-# case_insensitive
-# source_file
-lpm_or25.tdf
-7c336183a9829041436aa19493531efc
-7
-# used_port {
-result
--1
-3
-data0
--1
-1
-}
-# include_file {
-lpm_or.inc
-b3db57fced17f86f7678b84966053be
-}
-# macro_sequence
-
-# end
-# entity
 LPM_OR
 # storage
 db|KOMPIC.(242).cnf
@@ -18650,37 +18336,6 @@ result0
 data0_0
 -1
 3
-}
-# hierarchies {
-CU:inst6|lpm_or25:inst53|lpm_or:lpm_or_component
-}
-# macro_sequence
-
-# end
-# entity
-lpm_or25
-# storage
-db|KOMPIC.(243).cnf
-db|KOMPIC.(243).cnf
-# case_insensitive
-# source_file
-lpm_or25.tdf
-7c336183a9829041436aa19493531efc
-7
-# used_port {
-result
--1
-3
-data0
--1
-3
-}
-# include_file {
-lpm_or.inc
-b3db57fced17f86f7678b84966053be
-}
-# hierarchies {
-CU:inst6|lpm_or25:inst53
 }
 # macro_sequence
 
@@ -18830,72 +18485,6 @@ data0
 
 # end
 # entity
-lpm_or7
-# storage
-db|KOMPIC.(188).cnf
-db|KOMPIC.(188).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-lpm_or7.vhd
-121eb96d6134534def3db63fd62e7f6
-5
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# hierarchies {
-CU:inst6|lpm_or7:inst14
-}
-# lmf
-|quartus|quartus|lmf|maxplus2.lmf
-a36c8ec425c8a2589af98b2d4daabc3
-# macro_sequence
-
-# end
-# entity
-lpm_or8
-# storage
-db|KOMPIC.(200).cnf
-db|KOMPIC.(200).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-lpm_or8.vhd
-993d9ee9ce154eb39c7f8d21644ee45
-5
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# hierarchies {
-CU:inst6|lpm_or8:inst28
-}
-# lmf
-|quartus|quartus|lmf|maxplus2.lmf
-a36c8ec425c8a2589af98b2d4daabc3
-# macro_sequence
-
-# end
-# entity
 lpm_decode
 # storage
 db|KOMPIC.(246).cnf
@@ -19006,72 +18595,6 @@ data0
 -1
 3
 }
-# macro_sequence
-
-# end
-# entity
-lpm_or9
-# storage
-db|KOMPIC.(179).cnf
-db|KOMPIC.(179).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-lpm_or9.vhd
-235dbbfc6c2962c8213cb6469a24b68
-5
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# hierarchies {
-CU:inst6|lpm_or9:inst29
-}
-# lmf
-|quartus|quartus|lmf|maxplus2.lmf
-a36c8ec425c8a2589af98b2d4daabc3
-# macro_sequence
-
-# end
-# entity
-lpm_or3
-# storage
-db|KOMPIC.(228).cnf
-db|KOMPIC.(228).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-lpm_or3.vhd
-9bc82150eb8458ddd3958735fbb6030
-5
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# hierarchies {
-CU:inst6|lpm_or3:inst4
-}
-# lmf
-|quartus|quartus|lmf|maxplus2.lmf
-a36c8ec425c8a2589af98b2d4daabc3
 # macro_sequence
 
 # end
@@ -19241,6 +18764,8 @@ data0
 }
 # hierarchies {
 CU:inst6|ADDC_REG_REG:inst47|lpm_decode14:inst|lpm_decode:lpm_decode_component
+CU:inst6|XOR_REG_REG:inst55|lpm_decode16:inst2|lpm_decode:lpm_decode_component
+CU:inst6|NAND_REG_REG:inst57|lpm_decode17:inst2|lpm_decode:lpm_decode_component
 }
 # macro_sequence
 
@@ -19410,6 +18935,656 @@ CU:inst6|JBZ:inst44|lpm_decode13:inst8|lpm_decode:lpm_decode_component
 
 # end
 # entity
+ALU
+# storage
+db|KOMPIC.(237).cnf
+db|KOMPIC.(237).cnf
+# case_insensitive
+# source_file
+alu.bdf
+1f6c139b9ea7b57f694e948f41af495
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ALU:inst
+}
+# macro_sequence
+
+# end
+# entity
+XOR_REG_REG
+# storage
+db|KOMPIC.(249).cnf
+db|KOMPIC.(249).cnf
+# case_insensitive
+# source_file
+xor_reg_reg.bdf
+51ff8166d2164b7956d99761a1710a4
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+CU:inst6|XOR_REG_REG:inst55
+}
+# macro_sequence
+
+# end
+# entity
+lpm_decode16
+# storage
+db|KOMPIC.(250).cnf
+db|KOMPIC.(250).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+lpm_decode16.vhd
+572046268352494a5b3cd2ec446cd945
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+CU:inst6|XOR_REG_REG:inst55|lpm_decode16:inst2
+}
+# lmf
+|quartus|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+LPM_OR
+# storage
+db|KOMPIC.(202).cnf
+db|KOMPIC.(202).cnf
+# case_insensitive
+# source_file
+|quartus|quartus|libraries|megafunctions|lpm_or.tdf
+402a97de1620c916ae9f944ebd407944
+7
+# user_parameter {
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+LPM_WIDTH
+1
+PARAMETER_UNKNOWN
+USR
+LPM_SIZE
+2
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN_LENGTH
+48
+CARRY_CHAIN_LENGTH
+USR
+CARRY_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+CASCADE_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+DEVICE_FAMILY
+Stratix II
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+result0
+-1
+3
+data1_0
+-1
+3
+data0_0
+-1
+3
+}
+# macro_sequence
+
+# end
+# entity
+lpm_or1
+# storage
+db|KOMPIC.(208).cnf
+db|KOMPIC.(208).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+lpm_or1.vhd
+ee6cbc54011b0d14bec829a811db313
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+CU:inst6|lpm_or1:inst22
+}
+# lmf
+|quartus|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+LPM_OR
+# storage
+db|KOMPIC.(220).cnf
+db|KOMPIC.(220).cnf
+# case_insensitive
+# source_file
+|quartus|quartus|libraries|megafunctions|lpm_or.tdf
+402a97de1620c916ae9f944ebd407944
+7
+# user_parameter {
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+LPM_WIDTH
+1
+PARAMETER_SIGNED_DEC
+USR
+LPM_SIZE
+40
+PARAMETER_SIGNED_DEC
+USR
+CARRY_CHAIN_LENGTH
+48
+CARRY_CHAIN_LENGTH
+USR
+CARRY_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+CASCADE_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+DEVICE_FAMILY
+Stratix II
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+RESULT0
+-1
+3
+DATA9_0
+-1
+3
+DATA8_0
+-1
+3
+DATA7_0
+-1
+3
+DATA6_0
+-1
+3
+DATA5_0
+-1
+3
+DATA4_0
+-1
+3
+DATA3_0
+-1
+3
+DATA39_0
+-1
+3
+DATA38_0
+-1
+3
+DATA37_0
+-1
+3
+DATA36_0
+-1
+3
+DATA35_0
+-1
+3
+DATA34_0
+-1
+3
+DATA33_0
+-1
+3
+DATA32_0
+-1
+3
+DATA31_0
+-1
+3
+DATA30_0
+-1
+3
+DATA2_0
+-1
+3
+DATA29_0
+-1
+3
+DATA28_0
+-1
+3
+DATA27_0
+-1
+3
+DATA26_0
+-1
+3
+DATA25_0
+-1
+3
+DATA24_0
+-1
+3
+DATA23_0
+-1
+3
+DATA22_0
+-1
+3
+DATA21_0
+-1
+3
+DATA20_0
+-1
+3
+DATA1_0
+-1
+3
+DATA19_0
+-1
+3
+DATA18_0
+-1
+3
+DATA17_0
+-1
+3
+DATA16_0
+-1
+3
+DATA15_0
+-1
+3
+DATA14_0
+-1
+3
+DATA13_0
+-1
+3
+DATA12_0
+-1
+3
+DATA11_0
+-1
+3
+DATA10_0
+-1
+3
+DATA0_0
+-1
+3
+}
+# hierarchies {
+CU:inst6|lpm_or1:inst22|lpm_or:lpm_or_component
+}
+# macro_sequence
+
+# end
+# entity
+LPM_OR
+# storage
+db|KOMPIC.(228).cnf
+db|KOMPIC.(228).cnf
+# case_insensitive
+# source_file
+|quartus|quartus|libraries|megafunctions|lpm_or.tdf
+402a97de1620c916ae9f944ebd407944
+7
+# user_parameter {
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+LPM_WIDTH
+1
+PARAMETER_SIGNED_DEC
+USR
+LPM_SIZE
+20
+PARAMETER_SIGNED_DEC
+USR
+CARRY_CHAIN_LENGTH
+48
+CARRY_CHAIN_LENGTH
+USR
+CARRY_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+CASCADE_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+DEVICE_FAMILY
+Stratix II
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+RESULT0
+-1
+3
+DATA9_0
+-1
+3
+DATA8_0
+-1
+3
+DATA7_0
+-1
+3
+DATA6_0
+-1
+3
+DATA5_0
+-1
+3
+DATA4_0
+-1
+3
+DATA3_0
+-1
+3
+DATA2_0
+-1
+3
+DATA1_0
+-1
+3
+DATA19_0
+-1
+3
+DATA18_0
+-1
+3
+DATA17_0
+-1
+3
+DATA16_0
+-1
+3
+DATA15_0
+-1
+3
+DATA14_0
+-1
+3
+DATA13_0
+-1
+3
+DATA12_0
+-1
+3
+DATA11_0
+-1
+3
+DATA10_0
+-1
+3
+DATA0_0
+-1
+3
+}
+# macro_sequence
+
+# end
+# entity
+LPM_OR
+# storage
+db|KOMPIC.(253).cnf
+db|KOMPIC.(253).cnf
+# case_insensitive
+# source_file
+|quartus|quartus|libraries|megafunctions|lpm_or.tdf
+402a97de1620c916ae9f944ebd407944
+7
+# user_parameter {
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+LPM_WIDTH
+1
+PARAMETER_SIGNED_DEC
+USR
+LPM_SIZE
+13
+PARAMETER_SIGNED_DEC
+USR
+CARRY_CHAIN_LENGTH
+48
+CARRY_CHAIN_LENGTH
+USR
+CARRY_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+CASCADE_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+DEVICE_FAMILY
+Stratix II
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+RESULT0
+-1
+3
+DATA9_0
+-1
+3
+DATA8_0
+-1
+3
+DATA7_0
+-1
+3
+DATA6_0
+-1
+3
+DATA5_0
+-1
+3
+DATA4_0
+-1
+3
+DATA3_0
+-1
+3
+DATA2_0
+-1
+3
+DATA1_0
+-1
+3
+DATA12_0
+-1
+3
+DATA11_0
+-1
+3
+DATA10_0
+-1
+3
+DATA0_0
+-1
+3
+}
+# hierarchies {
+CU:inst6|lpm_or7:inst14|lpm_or:lpm_or_component
+}
+# macro_sequence
+
+# end
+# entity
+KOMPIC
+# storage
+db|KOMPIC.(190).cnf
+db|KOMPIC.(190).cnf
+# case_insensitive
+# source_file
+kompic.bdf
+1e54c9c4b6fb176176c3c214baf080a5
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+NAND_REG_REG
+# storage
+db|KOMPIC.(254).cnf
+db|KOMPIC.(254).cnf
+# case_insensitive
+# source_file
+nand_reg_reg.bdf
+ee7751482b8a8a186f5e727be53a45
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+CU:inst6|NAND_REG_REG:inst57
+}
+# macro_sequence
+
+# end
+# entity
+lpm_decode17
+# storage
+db|KOMPIC.(255).cnf
+db|KOMPIC.(255).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+lpm_decode17.vhd
+ecfe6c7e189e4c64d3f1c75b2c3ed246
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+CU:inst6|NAND_REG_REG:inst57|lpm_decode17:inst2
+}
+# lmf
+|quartus|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
 CU
 # storage
 db|KOMPIC.(178).cnf
@@ -19417,7 +19592,7 @@ db|KOMPIC.(178).cnf
 # case_insensitive
 # source_file
 cu.bdf
-e8b2f225cf647ed6eaf8b239a979332
+88f4d7406858efe46468d6b597b8c8
 26
 # internal_option {
 BLOCK_DESIGN_NAMING
@@ -19430,10 +19605,512 @@ CU:inst6
 
 # end
 # entity
+lpm_or9
+# storage
+db|KOMPIC.(179).cnf
+db|KOMPIC.(179).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+lpm_or9.vhd
+58a7646e322a91ce528e28be64c02d4d
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+CU:inst6|lpm_or9:inst29
+}
+# lmf
+|quartus|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+lpm_or21
+# storage
+db|KOMPIC.(188).cnf
+db|KOMPIC.(188).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+lpm_or21.vhd
+e9a4efdc1912582d24ff99a186f2dcc
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+CU:inst6|lpm_or21:inst49
+}
+# lmf
+|quartus|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+lpm_or2
+# storage
+db|KOMPIC.(197).cnf
+db|KOMPIC.(197).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+lpm_or2.vhd
+9dbcf0edbc5152385ef581a4d1ea4154
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+CU:inst6|lpm_or2:inst2
+}
+# lmf
+|quartus|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+lpm_or22
+# storage
+db|KOMPIC.(200).cnf
+db|KOMPIC.(200).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+lpm_or22.vhd
+93d41846bea77add303db4b8995a94
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+CU:inst6|lpm_or22:inst50
+}
+# lmf
+|quartus|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+lpm_or23
+# storage
+db|KOMPIC.(227).cnf
+db|KOMPIC.(227).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+lpm_or23.vhd
+42958af21f16cf8c2582a499b0a74c3d
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+CU:inst6|lpm_or23:inst51
+}
+# lmf
+|quartus|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+lpm_or10
+# storage
+db|KOMPIC.(232).cnf
+db|KOMPIC.(232).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+lpm_or10.vhd
+81763d8cbfd00499ea553f7f61d9f19
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+CU:inst6|lpm_or10:inst32
+}
+# lmf
+|quartus|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+lpm_or11
+# storage
+db|KOMPIC.(235).cnf
+db|KOMPIC.(235).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+lpm_or11.vhd
+7ce8feaf9208da1f87268a364e5a295
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+CU:inst6|lpm_or11:inst33
+}
+# lmf
+|quartus|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+lpm_or14
+# storage
+db|KOMPIC.(236).cnf
+db|KOMPIC.(236).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+lpm_or14.vhd
+e258e61033d7d639ede64ab470a47f88
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+CU:inst6|lpm_or14:inst38
+}
+# lmf
+|quartus|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+lpm_or24
+# storage
+db|KOMPIC.(240).cnf
+db|KOMPIC.(240).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+lpm_or24.vhd
+3a6d5ed78cef07b2ae4af6dce145d5
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+CU:inst6|lpm_or24:inst52
+}
+# lmf
+|quartus|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+lpm_or25
+# storage
+db|KOMPIC.(241).cnf
+db|KOMPIC.(241).cnf
+# case_insensitive
+# source_file
+lpm_or25.tdf
+dc17cd1fb2d1d3554997d47164afcc8d
+7
+# used_port {
+result
+-1
+3
+data2
+-1
+3
+data1
+-1
+3
+data0
+-1
+3
+}
+# include_file {
+lpm_or.inc
+b3db57fced17f86f7678b84966053be
+}
+# hierarchies {
+CU:inst6|lpm_or25:inst53
+}
+# macro_sequence
+
+# end
+# entity
+LPM_OR
+# storage
+db|KOMPIC.(243).cnf
+db|KOMPIC.(243).cnf
+# case_insensitive
+# source_file
+|quartus|quartus|libraries|megafunctions|lpm_or.tdf
+402a97de1620c916ae9f944ebd407944
+7
+# user_parameter {
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+LPM_WIDTH
+1
+PARAMETER_UNKNOWN
+USR
+LPM_SIZE
+3
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN_LENGTH
+48
+CARRY_CHAIN_LENGTH
+USR
+CARRY_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+CASCADE_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+DEVICE_FAMILY
+Stratix II
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+result0
+-1
+3
+data2_0
+-1
+3
+data1_0
+-1
+3
+data0_0
+-1
+3
+}
+# hierarchies {
+CU:inst6|lpm_or25:inst53|lpm_or:lpm_or_component
+}
+# macro_sequence
+
+# end
+# entity
+lpm_or8
+# storage
+db|KOMPIC.(251).cnf
+db|KOMPIC.(251).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+lpm_or8.vhd
+1e509c1388a595bcadf8e312e74ed167
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+CU:inst6|lpm_or8:inst28
+}
+# lmf
+|quartus|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+lpm_or7
+# storage
+db|KOMPIC.(252).cnf
+db|KOMPIC.(252).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+lpm_or7.vhd
+5f5288873bc58cfac54cbbb373ecc52
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+CU:inst6|lpm_or7:inst14
+}
+# lmf
+|quartus|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+lpm_or3
+# storage
+db|KOMPIC.(256).cnf
+db|KOMPIC.(256).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+lpm_or3.vhd
+baeb7f6992dda1cc3128fe97e8378a
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+CU:inst6|lpm_or3:inst4
+}
+# lmf
+|quartus|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
 altsyncram_nv61
 # storage
-db|KOMPIC.(190).cnf
-db|KOMPIC.(190).cnf
+db|KOMPIC.(209).cnf
+db|KOMPIC.(209).cnf
 # case_insensitive
 # source_file
 db|altsyncram_nv61.tdf
@@ -19521,7 +20198,7 @@ address_a0
 }
 # memory_file {
 rom.hex
-672ec13517e69c4536a09a166e5b8
+3413a5a65a6dc25a9bb2867523d566a
 }
 # hierarchies {
 MEMORY:inst4|lpm_rom0:inst1|altsyncram:altsyncram_component|altsyncram_nv61:auto_generated
@@ -19530,50 +20207,10 @@ MEMORY:inst4|lpm_rom0:inst1|altsyncram:altsyncram_component|altsyncram_nv61:auto
 
 # end
 # entity
-ALU
-# storage
-db|KOMPIC.(237).cnf
-db|KOMPIC.(237).cnf
-# case_insensitive
-# source_file
-alu.bdf
-1f6c139b9ea7b57f694e948f41af495
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-ALU:inst
-}
-# macro_sequence
-
-# end
-# entity
-KOMPIC
-# storage
-db|KOMPIC.(239).cnf
-db|KOMPIC.(239).cnf
-# case_insensitive
-# source_file
-kompic.bdf
-254a1428f6bcd18ea685cfe2014f2c7
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-|
-}
-# macro_sequence
-
-# end
-# entity
 altsyncram_3ea1
 # storage
-db|KOMPIC.(209).cnf
-db|KOMPIC.(209).cnf
+db|KOMPIC.(239).cnf
+db|KOMPIC.(239).cnf
 # case_insensitive
 # source_file
 db|altsyncram_3ea1.tdf
@@ -19709,7 +20346,7 @@ address_a0
 }
 # memory_file {
 ram.hex
-a478b539de54f2f3a67af02bd1205ffa
+75a4b3edcd8cb327d33cf9687ea3e
 }
 # hierarchies {
 MEMORY:inst4|lpm_ram_dq0:inst|altsyncram:altsyncram_component|altsyncram_3ea1:auto_generated

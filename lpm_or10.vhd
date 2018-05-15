@@ -47,6 +47,8 @@ ENTITY lpm_or10 IS
 		data2		: IN STD_LOGIC ;
 		data3		: IN STD_LOGIC ;
 		data4		: IN STD_LOGIC ;
+		data5		: IN STD_LOGIC ;
+		data6		: IN STD_LOGIC ;
 		result		: OUT STD_LOGIC 
 	);
 END lpm_or10;
@@ -59,29 +61,35 @@ ARCHITECTURE SYN OF lpm_or10 IS
 	SIGNAL sub_wire0	: STD_LOGIC_VECTOR (0 DOWNTO 0);
 	SIGNAL sub_wire1	: STD_LOGIC ;
 	SIGNAL sub_wire2	: STD_LOGIC ;
-	SIGNAL sub_wire3	: STD_LOGIC_2D (4 DOWNTO 0, 0 DOWNTO 0);
+	SIGNAL sub_wire3	: STD_LOGIC_2D (6 DOWNTO 0, 0 DOWNTO 0);
 	SIGNAL sub_wire4	: STD_LOGIC ;
 	SIGNAL sub_wire5	: STD_LOGIC ;
 	SIGNAL sub_wire6	: STD_LOGIC ;
 	SIGNAL sub_wire7	: STD_LOGIC ;
+	SIGNAL sub_wire8	: STD_LOGIC ;
+	SIGNAL sub_wire9	: STD_LOGIC ;
 
 BEGIN
-	sub_wire7    <= data0;
-	sub_wire6    <= data1;
-	sub_wire5    <= data2;
-	sub_wire4    <= data3;
+	sub_wire9    <= data0;
+	sub_wire8    <= data1;
+	sub_wire7    <= data2;
+	sub_wire6    <= data3;
+	sub_wire5    <= data4;
+	sub_wire4    <= data5;
 	sub_wire1    <= sub_wire0(0);
 	result    <= sub_wire1;
-	sub_wire2    <= data4;
-	sub_wire3(4, 0)    <= sub_wire2;
-	sub_wire3(3, 0)    <= sub_wire4;
-	sub_wire3(2, 0)    <= sub_wire5;
-	sub_wire3(1, 0)    <= sub_wire6;
-	sub_wire3(0, 0)    <= sub_wire7;
+	sub_wire2    <= data6;
+	sub_wire3(6, 0)    <= sub_wire2;
+	sub_wire3(5, 0)    <= sub_wire4;
+	sub_wire3(4, 0)    <= sub_wire5;
+	sub_wire3(3, 0)    <= sub_wire6;
+	sub_wire3(2, 0)    <= sub_wire7;
+	sub_wire3(1, 0)    <= sub_wire8;
+	sub_wire3(0, 0)    <= sub_wire9;
 
 	lpm_or_component : lpm_or
 	GENERIC MAP (
-		lpm_size => 5,
+		lpm_size => 7,
 		lpm_type => "LPM_OR",
 		lpm_width => 1
 	)
@@ -103,8 +111,8 @@ END SYN;
 -- Retrieval info: PRIVATE: InputAsBus NUMERIC "0"
 -- Retrieval info: PRIVATE: SYNTH_WRAPPER_GEN_POSTFIX STRING "0"
 -- Retrieval info: PRIVATE: WidthInput NUMERIC "1"
--- Retrieval info: PRIVATE: nInput NUMERIC "5"
--- Retrieval info: CONSTANT: LPM_SIZE NUMERIC "5"
+-- Retrieval info: PRIVATE: nInput NUMERIC "7"
+-- Retrieval info: CONSTANT: LPM_SIZE NUMERIC "7"
 -- Retrieval info: CONSTANT: LPM_TYPE STRING "LPM_OR"
 -- Retrieval info: CONSTANT: LPM_WIDTH NUMERIC "1"
 -- Retrieval info: USED_PORT: data0 0 0 0 0 INPUT NODEFVAL data0
@@ -112,12 +120,16 @@ END SYN;
 -- Retrieval info: USED_PORT: data2 0 0 0 0 INPUT NODEFVAL data2
 -- Retrieval info: USED_PORT: data3 0 0 0 0 INPUT NODEFVAL data3
 -- Retrieval info: USED_PORT: data4 0 0 0 0 INPUT NODEFVAL data4
+-- Retrieval info: USED_PORT: data5 0 0 0 0 INPUT NODEFVAL data5
+-- Retrieval info: USED_PORT: data6 0 0 0 0 INPUT NODEFVAL data6
 -- Retrieval info: USED_PORT: result 0 0 0 0 OUTPUT NODEFVAL result
 -- Retrieval info: CONNECT: @data 1 0 1 0 data0 0 0 0 0
 -- Retrieval info: CONNECT: @data 1 1 1 0 data1 0 0 0 0
 -- Retrieval info: CONNECT: @data 1 2 1 0 data2 0 0 0 0
 -- Retrieval info: CONNECT: @data 1 3 1 0 data3 0 0 0 0
 -- Retrieval info: CONNECT: @data 1 4 1 0 data4 0 0 0 0
+-- Retrieval info: CONNECT: @data 1 5 1 0 data5 0 0 0 0
+-- Retrieval info: CONNECT: @data 1 6 1 0 data6 0 0 0 0
 -- Retrieval info: CONNECT: result 0 0 0 0 @result 0 0 1 0
 -- Retrieval info: LIBRARY: lpm lpm.lpm_components.all
 -- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_or10.vhd TRUE

@@ -16,7 +16,9 @@
 FUNCTION lpm_or23 
 (
 	data0,
-	data1
+	data1,
+	data2,
+	data3
 )
 
 RETURNS (
