@@ -1,5 +1,5 @@
 Flow report for KOMPIC
-Tue May 15 07:18:20 2018
+Tue May 15 08:37:30 2018
 Quartus II Version 9.1 Build 222 10/21/2009 SJ Web Edition
 
 
@@ -38,16 +38,16 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------+
 ; Flow Summary                                                            ;
 +-------------------------------+-----------------------------------------+
-; Flow Status                   ; Successful - Tue May 15 07:18:20 2018   ;
+; Flow Status                   ; Successful - Tue May 15 08:37:30 2018   ;
 ; Quartus II Version            ; 9.1 Build 222 10/21/2009 SJ Web Edition ;
 ; Revision Name                 ; KOMPIC                                  ;
 ; Top-level Entity Name         ; KOMPIC                                  ;
 ; Family                        ; Stratix II                              ;
 ; Met timing requirements       ; N/A                                     ;
 ; Logic utilization             ; N/A                                     ;
-;     Combinational ALUTs       ; 803                                     ;
-;     Dedicated logic registers ; 574                                     ;
-; Total registers               ; 574                                     ;
+;     Combinational ALUTs       ; 960                                     ;
+;     Dedicated logic registers ; 597                                     ;
+; Total registers               ; 597                                     ;
 ; Total pins                    ; 172                                     ;
 ; Total virtual pins            ; 0                                       ;
 ; Total block memory bits       ; 57,344                                  ;
@@ -62,7 +62,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 05/15/2018 07:18:12 ;
+; Start date & time ; 05/15/2018 08:37:20 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; KOMPIC              ;
 +-------------------+---------------------+
@@ -73,7 +73,7 @@ applicable agreement for further details.
 +------------------------------------+--------------------------------+---------------+-------------+----------------+
 ; Assignment Name                    ; Value                          ; Default Value ; Entity Name ; Section Id     ;
 +------------------------------------+--------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID              ; 10995770589187.152635789223248 ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID              ; 10995770589187.152636264026620 ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                       ; LPM_DECODE                     ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                       ; LPM_OR                         ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                       ; LPM_AND                        ; --            ; --          ; --             ;
@@ -163,6 +163,8 @@ applicable agreement for further details.
 ; IP_TOOL_NAME                       ; LPM_FF                         ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                       ; LPM_DECODE                     ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                       ; LPM_DECODE                     ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_DECODE                     ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.1                            ; --            ; --          ; --             ;
 ; IP_TOOL_VERSION                    ; 9.1                            ; --            ; --          ; --             ;
 ; IP_TOOL_VERSION                    ; 9.1                            ; --            ; --          ; --             ;
 ; IP_TOOL_VERSION                    ; 9.1                            ; --            ; --          ; --             ;
@@ -522,6 +524,9 @@ applicable agreement for further details.
 ; MISC_FILE                          ; lpm_decode17.bsf               ; --            ; --          ; --             ;
 ; MISC_FILE                          ; lpm_decode17.inc               ; --            ; --          ; --             ;
 ; MISC_FILE                          ; lpm_decode17.cmp               ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_decode18.bsf               ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_decode18.inc               ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_decode18.cmp               ; --            ; --          ; --             ;
 ; PARTITION_COLOR                    ; 16764057                       ; --            ; --          ; Top            ;
 ; PARTITION_NETLIST_TYPE             ; SOURCE                         ; --            ; --          ; Top            ;
 ; USE_GENERATED_PHYSICAL_CONSTRAINTS ; Off                            ; --            ; --          ; eda_blast_fpga ;
@@ -533,8 +538,8 @@ applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:08     ; 1.0                     ; 304 MB              ; 00:00:08                           ;
-; Total                ; 00:00:08     ; --                      ; --                  ; 00:00:08                           ;
+; Analysis & Synthesis ; 00:00:09     ; 1.0                     ; 305 MB              ; 00:00:09                           ;
+; Total                ; 00:00:09     ; --                      ; --                  ; 00:00:09                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

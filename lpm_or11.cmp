@@ -18,6 +18,8 @@ component lpm_or11
 	(
 		data0		: IN STD_LOGIC ;
 		data1		: IN STD_LOGIC ;
+		data10		: IN STD_LOGIC ;
+		data11		: IN STD_LOGIC ;
 		data2		: IN STD_LOGIC ;
 		data3		: IN STD_LOGIC ;
 		data4		: IN STD_LOGIC ;

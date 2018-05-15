@@ -1,12 +1,12 @@
-Analysis & Synthesis Status : Successful - Tue May 15 07:18:20 2018
+Analysis & Synthesis Status : Successful - Tue May 15 08:37:30 2018
 Quartus II Version : 9.1 Build 222 10/21/2009 SJ Web Edition
 Revision Name : KOMPIC
 Top-level Entity Name : KOMPIC
 Family : Stratix II
 Logic utilization : N/A
-    Combinational ALUTs : 803
-    Dedicated logic registers : 574
-Total registers : 574
+    Combinational ALUTs : 960
+    Dedicated logic registers : 597
+Total registers : 597
 Total pins : 172
 Total virtual pins : 0
 Total block memory bits : 57,344

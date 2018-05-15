@@ -16,7 +16,7 @@
 FUNCTION lpm_clshift0 
 (
 	data[13..0],
-	distance
+	distance[3..0]
 )
 
 RETURNS (

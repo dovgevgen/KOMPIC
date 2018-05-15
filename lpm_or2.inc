@@ -30,6 +30,8 @@ FUNCTION lpm_or2
 	data2,
 	data20,
 	data21,
+	data22,
+	data23,
 	data3,
 	data4,
 	data5,

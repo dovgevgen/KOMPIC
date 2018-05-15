@@ -23,6 +23,7 @@ component lpm_or10
 		data4		: IN STD_LOGIC ;
 		data5		: IN STD_LOGIC ;
 		data6		: IN STD_LOGIC ;
+		data7		: IN STD_LOGIC ;
 		result		: OUT STD_LOGIC 
 	);
 end component;

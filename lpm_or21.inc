@@ -17,7 +17,8 @@ FUNCTION lpm_or21
 (
 	data0,
 	data1,
-	data2
+	data2,
+	data3
 )
 
 RETURNS (

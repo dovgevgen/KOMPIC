@@ -1,5 +1,5 @@
 Assembler report for KOMPIC
-Sun May 13 12:43:48 2018
+Tue May 15 08:31:53 2018
 Quartus II Version 9.1 Build 222 10/21/2009 SJ Web Edition
 
 
@@ -38,9 +38,9 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Sun May 13 12:43:48 2018 ;
+; Assembler Status      ; Successful - Tue May 15 08:31:53 2018 ;
 ; Revision Name         ; KOMPIC                                ;
-; Top-level Entity Name ; KOMPIC                                ;
+; Top-level Entity Name ; OP_SLA                                ;
 ; Family                ; Stratix II                            ;
 ; Device                ; EP2S15F484C3                          ;
 +-----------------------+---------------------------------------+
@@ -96,7 +96,7 @@ applicable agreement for further details.
 +----------------+------------------------------------+
 ; Device         ; EP2S15F484C3                       ;
 ; JTAG usercode  ; 0xFFFFFFFF                         ;
-; Checksum       ; 0x002A900C                         ;
+; Checksum       ; 0x00282A84                         ;
 +----------------+------------------------------------+
 
 
@@ -107,7 +107,7 @@ applicable agreement for further details.
 +--------------------+--------------------------------+
 ; Device             ; EPC16                          ;
 ; JTAG usercode      ; 0xFFFFFFFF                     ;
-; Checksum           ; 0x1EE821C1                     ;
+; Checksum           ; 0x1EF409A9                     ;
 ; Compression Ratio  ; 3                              ;
 +--------------------+--------------------------------+
 
@@ -118,14 +118,14 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II Assembler
     Info: Version 9.1 Build 222 10/21/2009 SJ Web Edition
-    Info: Processing started: Sun May 13 12:43:46 2018
+    Info: Processing started: Tue May 15 08:31:52 2018
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off KOMPIC -c KOMPIC
 Info: Writing out detailed assembly data for power analysis
 Info: Assembler is generating device programming files
 Info: Quartus II Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 262 megabytes
-    Info: Processing ended: Sun May 13 12:43:48 2018
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:02
+    Info: Peak virtual memory: 260 megabytes
+    Info: Processing ended: Tue May 15 08:31:53 2018
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
 
 

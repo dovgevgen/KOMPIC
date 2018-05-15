@@ -77,6 +77,14 @@ ENTITY lpm_or1 IS
 		data38		: IN STD_LOGIC ;
 		data39		: IN STD_LOGIC ;
 		data4		: IN STD_LOGIC ;
+		data40		: IN STD_LOGIC ;
+		data41		: IN STD_LOGIC ;
+		data42		: IN STD_LOGIC ;
+		data43		: IN STD_LOGIC ;
+		data44		: IN STD_LOGIC ;
+		data45		: IN STD_LOGIC ;
+		data46		: IN STD_LOGIC ;
+		data47		: IN STD_LOGIC ;
 		data5		: IN STD_LOGIC ;
 		data6		: IN STD_LOGIC ;
 		data7		: IN STD_LOGIC ;
@@ -94,7 +102,7 @@ ARCHITECTURE SYN OF lpm_or1 IS
 	SIGNAL sub_wire0	: STD_LOGIC_VECTOR (0 DOWNTO 0);
 	SIGNAL sub_wire1	: STD_LOGIC ;
 	SIGNAL sub_wire2	: STD_LOGIC ;
-	SIGNAL sub_wire3	: STD_LOGIC_2D (39 DOWNTO 0, 0 DOWNTO 0);
+	SIGNAL sub_wire3	: STD_LOGIC_2D (47 DOWNTO 0, 0 DOWNTO 0);
 	SIGNAL sub_wire4	: STD_LOGIC ;
 	SIGNAL sub_wire5	: STD_LOGIC ;
 	SIGNAL sub_wire6	: STD_LOGIC ;
@@ -134,94 +142,118 @@ ARCHITECTURE SYN OF lpm_or1 IS
 	SIGNAL sub_wire40	: STD_LOGIC ;
 	SIGNAL sub_wire41	: STD_LOGIC ;
 	SIGNAL sub_wire42	: STD_LOGIC ;
+	SIGNAL sub_wire43	: STD_LOGIC ;
+	SIGNAL sub_wire44	: STD_LOGIC ;
+	SIGNAL sub_wire45	: STD_LOGIC ;
+	SIGNAL sub_wire46	: STD_LOGIC ;
+	SIGNAL sub_wire47	: STD_LOGIC ;
+	SIGNAL sub_wire48	: STD_LOGIC ;
+	SIGNAL sub_wire49	: STD_LOGIC ;
+	SIGNAL sub_wire50	: STD_LOGIC ;
 
 BEGIN
-	sub_wire42    <= data0;
-	sub_wire41    <= data1;
-	sub_wire40    <= data2;
-	sub_wire39    <= data3;
-	sub_wire38    <= data4;
-	sub_wire37    <= data5;
-	sub_wire36    <= data6;
-	sub_wire35    <= data7;
-	sub_wire34    <= data8;
-	sub_wire33    <= data9;
-	sub_wire32    <= data10;
-	sub_wire31    <= data11;
-	sub_wire30    <= data12;
-	sub_wire29    <= data13;
-	sub_wire28    <= data14;
-	sub_wire27    <= data15;
-	sub_wire26    <= data16;
-	sub_wire25    <= data17;
-	sub_wire24    <= data18;
-	sub_wire23    <= data19;
-	sub_wire22    <= data20;
-	sub_wire21    <= data21;
-	sub_wire20    <= data22;
-	sub_wire19    <= data23;
-	sub_wire18    <= data24;
-	sub_wire17    <= data25;
-	sub_wire16    <= data26;
-	sub_wire15    <= data27;
-	sub_wire14    <= data28;
-	sub_wire13    <= data29;
-	sub_wire12    <= data30;
-	sub_wire11    <= data31;
-	sub_wire10    <= data32;
-	sub_wire9    <= data33;
-	sub_wire8    <= data34;
-	sub_wire7    <= data35;
-	sub_wire6    <= data36;
-	sub_wire5    <= data37;
-	sub_wire4    <= data38;
+	sub_wire50    <= data0;
+	sub_wire49    <= data1;
+	sub_wire48    <= data2;
+	sub_wire47    <= data3;
+	sub_wire46    <= data4;
+	sub_wire45    <= data5;
+	sub_wire44    <= data6;
+	sub_wire43    <= data7;
+	sub_wire42    <= data8;
+	sub_wire41    <= data9;
+	sub_wire40    <= data10;
+	sub_wire39    <= data11;
+	sub_wire38    <= data12;
+	sub_wire37    <= data13;
+	sub_wire36    <= data14;
+	sub_wire35    <= data15;
+	sub_wire34    <= data16;
+	sub_wire33    <= data17;
+	sub_wire32    <= data18;
+	sub_wire31    <= data19;
+	sub_wire30    <= data20;
+	sub_wire29    <= data21;
+	sub_wire28    <= data22;
+	sub_wire27    <= data23;
+	sub_wire26    <= data24;
+	sub_wire25    <= data25;
+	sub_wire24    <= data26;
+	sub_wire23    <= data27;
+	sub_wire22    <= data28;
+	sub_wire21    <= data29;
+	sub_wire20    <= data30;
+	sub_wire19    <= data31;
+	sub_wire18    <= data32;
+	sub_wire17    <= data33;
+	sub_wire16    <= data34;
+	sub_wire15    <= data35;
+	sub_wire14    <= data36;
+	sub_wire13    <= data37;
+	sub_wire12    <= data38;
+	sub_wire11    <= data39;
+	sub_wire10    <= data40;
+	sub_wire9    <= data41;
+	sub_wire8    <= data42;
+	sub_wire7    <= data43;
+	sub_wire6    <= data44;
+	sub_wire5    <= data45;
+	sub_wire4    <= data46;
 	sub_wire1    <= sub_wire0(0);
 	result    <= sub_wire1;
-	sub_wire2    <= data39;
-	sub_wire3(39, 0)    <= sub_wire2;
-	sub_wire3(38, 0)    <= sub_wire4;
-	sub_wire3(37, 0)    <= sub_wire5;
-	sub_wire3(36, 0)    <= sub_wire6;
-	sub_wire3(35, 0)    <= sub_wire7;
-	sub_wire3(34, 0)    <= sub_wire8;
-	sub_wire3(33, 0)    <= sub_wire9;
-	sub_wire3(32, 0)    <= sub_wire10;
-	sub_wire3(31, 0)    <= sub_wire11;
-	sub_wire3(30, 0)    <= sub_wire12;
-	sub_wire3(29, 0)    <= sub_wire13;
-	sub_wire3(28, 0)    <= sub_wire14;
-	sub_wire3(27, 0)    <= sub_wire15;
-	sub_wire3(26, 0)    <= sub_wire16;
-	sub_wire3(25, 0)    <= sub_wire17;
-	sub_wire3(24, 0)    <= sub_wire18;
-	sub_wire3(23, 0)    <= sub_wire19;
-	sub_wire3(22, 0)    <= sub_wire20;
-	sub_wire3(21, 0)    <= sub_wire21;
-	sub_wire3(20, 0)    <= sub_wire22;
-	sub_wire3(19, 0)    <= sub_wire23;
-	sub_wire3(18, 0)    <= sub_wire24;
-	sub_wire3(17, 0)    <= sub_wire25;
-	sub_wire3(16, 0)    <= sub_wire26;
-	sub_wire3(15, 0)    <= sub_wire27;
-	sub_wire3(14, 0)    <= sub_wire28;
-	sub_wire3(13, 0)    <= sub_wire29;
-	sub_wire3(12, 0)    <= sub_wire30;
-	sub_wire3(11, 0)    <= sub_wire31;
-	sub_wire3(10, 0)    <= sub_wire32;
-	sub_wire3(9, 0)    <= sub_wire33;
-	sub_wire3(8, 0)    <= sub_wire34;
-	sub_wire3(7, 0)    <= sub_wire35;
-	sub_wire3(6, 0)    <= sub_wire36;
-	sub_wire3(5, 0)    <= sub_wire37;
-	sub_wire3(4, 0)    <= sub_wire38;
-	sub_wire3(3, 0)    <= sub_wire39;
-	sub_wire3(2, 0)    <= sub_wire40;
-	sub_wire3(1, 0)    <= sub_wire41;
-	sub_wire3(0, 0)    <= sub_wire42;
+	sub_wire2    <= data47;
+	sub_wire3(47, 0)    <= sub_wire2;
+	sub_wire3(46, 0)    <= sub_wire4;
+	sub_wire3(45, 0)    <= sub_wire5;
+	sub_wire3(44, 0)    <= sub_wire6;
+	sub_wire3(43, 0)    <= sub_wire7;
+	sub_wire3(42, 0)    <= sub_wire8;
+	sub_wire3(41, 0)    <= sub_wire9;
+	sub_wire3(40, 0)    <= sub_wire10;
+	sub_wire3(39, 0)    <= sub_wire11;
+	sub_wire3(38, 0)    <= sub_wire12;
+	sub_wire3(37, 0)    <= sub_wire13;
+	sub_wire3(36, 0)    <= sub_wire14;
+	sub_wire3(35, 0)    <= sub_wire15;
+	sub_wire3(34, 0)    <= sub_wire16;
+	sub_wire3(33, 0)    <= sub_wire17;
+	sub_wire3(32, 0)    <= sub_wire18;
+	sub_wire3(31, 0)    <= sub_wire19;
+	sub_wire3(30, 0)    <= sub_wire20;
+	sub_wire3(29, 0)    <= sub_wire21;
+	sub_wire3(28, 0)    <= sub_wire22;
+	sub_wire3(27, 0)    <= sub_wire23;
+	sub_wire3(26, 0)    <= sub_wire24;
+	sub_wire3(25, 0)    <= sub_wire25;
+	sub_wire3(24, 0)    <= sub_wire26;
+	sub_wire3(23, 0)    <= sub_wire27;
+	sub_wire3(22, 0)    <= sub_wire28;
+	sub_wire3(21, 0)    <= sub_wire29;
+	sub_wire3(20, 0)    <= sub_wire30;
+	sub_wire3(19, 0)    <= sub_wire31;
+	sub_wire3(18, 0)    <= sub_wire32;
+	sub_wire3(17, 0)    <= sub_wire33;
+	sub_wire3(16, 0)    <= sub_wire34;
+	sub_wire3(15, 0)    <= sub_wire35;
+	sub_wire3(14, 0)    <= sub_wire36;
+	sub_wire3(13, 0)    <= sub_wire37;
+	sub_wire3(12, 0)    <= sub_wire38;
+	sub_wire3(11, 0)    <= sub_wire39;
+	sub_wire3(10, 0)    <= sub_wire40;
+	sub_wire3(9, 0)    <= sub_wire41;
+	sub_wire3(8, 0)    <= sub_wire42;
+	sub_wire3(7, 0)    <= sub_wire43;
+	sub_wire3(6, 0)    <= sub_wire44;
+	sub_wire3(5, 0)    <= sub_wire45;
+	sub_wire3(4, 0)    <= sub_wire46;
+	sub_wire3(3, 0)    <= sub_wire47;
+	sub_wire3(2, 0)    <= sub_wire48;
+	sub_wire3(1, 0)    <= sub_wire49;
+	sub_wire3(0, 0)    <= sub_wire50;
 
 	lpm_or_component : lpm_or
 	GENERIC MAP (
-		lpm_size => 40,
+		lpm_size => 48,
 		lpm_type => "LPM_OR",
 		lpm_width => 1
 	)
@@ -243,8 +275,8 @@ END SYN;
 -- Retrieval info: PRIVATE: InputAsBus NUMERIC "0"
 -- Retrieval info: PRIVATE: SYNTH_WRAPPER_GEN_POSTFIX STRING "0"
 -- Retrieval info: PRIVATE: WidthInput NUMERIC "1"
--- Retrieval info: PRIVATE: nInput NUMERIC "40"
--- Retrieval info: CONSTANT: LPM_SIZE NUMERIC "40"
+-- Retrieval info: PRIVATE: nInput NUMERIC "48"
+-- Retrieval info: CONSTANT: LPM_SIZE NUMERIC "48"
 -- Retrieval info: CONSTANT: LPM_TYPE STRING "LPM_OR"
 -- Retrieval info: CONSTANT: LPM_WIDTH NUMERIC "1"
 -- Retrieval info: USED_PORT: data0 0 0 0 0 INPUT NODEFVAL data0
@@ -282,6 +314,14 @@ END SYN;
 -- Retrieval info: USED_PORT: data38 0 0 0 0 INPUT NODEFVAL data38
 -- Retrieval info: USED_PORT: data39 0 0 0 0 INPUT NODEFVAL data39
 -- Retrieval info: USED_PORT: data4 0 0 0 0 INPUT NODEFVAL data4
+-- Retrieval info: USED_PORT: data40 0 0 0 0 INPUT NODEFVAL data40
+-- Retrieval info: USED_PORT: data41 0 0 0 0 INPUT NODEFVAL data41
+-- Retrieval info: USED_PORT: data42 0 0 0 0 INPUT NODEFVAL data42
+-- Retrieval info: USED_PORT: data43 0 0 0 0 INPUT NODEFVAL data43
+-- Retrieval info: USED_PORT: data44 0 0 0 0 INPUT NODEFVAL data44
+-- Retrieval info: USED_PORT: data45 0 0 0 0 INPUT NODEFVAL data45
+-- Retrieval info: USED_PORT: data46 0 0 0 0 INPUT NODEFVAL data46
+-- Retrieval info: USED_PORT: data47 0 0 0 0 INPUT NODEFVAL data47
 -- Retrieval info: USED_PORT: data5 0 0 0 0 INPUT NODEFVAL data5
 -- Retrieval info: USED_PORT: data6 0 0 0 0 INPUT NODEFVAL data6
 -- Retrieval info: USED_PORT: data7 0 0 0 0 INPUT NODEFVAL data7
@@ -328,6 +368,14 @@ END SYN;
 -- Retrieval info: CONNECT: @data 1 37 1 0 data37 0 0 0 0
 -- Retrieval info: CONNECT: @data 1 38 1 0 data38 0 0 0 0
 -- Retrieval info: CONNECT: @data 1 39 1 0 data39 0 0 0 0
+-- Retrieval info: CONNECT: @data 1 40 1 0 data40 0 0 0 0
+-- Retrieval info: CONNECT: @data 1 41 1 0 data41 0 0 0 0
+-- Retrieval info: CONNECT: @data 1 42 1 0 data42 0 0 0 0
+-- Retrieval info: CONNECT: @data 1 43 1 0 data43 0 0 0 0
+-- Retrieval info: CONNECT: @data 1 44 1 0 data44 0 0 0 0
+-- Retrieval info: CONNECT: @data 1 45 1 0 data45 0 0 0 0
+-- Retrieval info: CONNECT: @data 1 46 1 0 data46 0 0 0 0
+-- Retrieval info: CONNECT: @data 1 47 1 0 data47 0 0 0 0
 -- Retrieval info: CONNECT: result 0 0 0 0 @result 0 0 1 0
 -- Retrieval info: LIBRARY: lpm lpm.lpm_components.all
 -- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_or1.vhd TRUE
