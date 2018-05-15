@@ -82,15 +82,15 @@ applicable agreement for further details.
 	(port
 		(pt 128 128)
 		(output)
-		(text "eq8" (rect 0 0 21 14)(font "Arial" (font_size 8)))
-		(text "eq8" (rect 91 122 109 135)(font "Arial" (font_size 8)))
+		(text "eq9" (rect 0 0 21 14)(font "Arial" (font_size 8)))
+		(text "eq9" (rect 91 122 109 135)(font "Arial" (font_size 8)))
 		(line (pt 128 128)(pt 112 128)(line_width 1))
 	)
 	(port
 		(pt 128 144)
 		(output)
-		(text "eq9" (rect 0 0 21 14)(font "Arial" (font_size 8)))
-		(text "eq9" (rect 91 138 109 151)(font "Arial" (font_size 8)))
+		(text "eq11" (rect 0 0 28 14)(font "Arial" (font_size 8)))
+		(text "eq11" (rect 85 138 109 151)(font "Arial" (font_size 8)))
 		(line (pt 128 144)(pt 112 144)(line_width 1))
 	)
 	(drawing

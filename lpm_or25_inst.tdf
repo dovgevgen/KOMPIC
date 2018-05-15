@@ -1,0 +1,8 @@
+(
+	result_sig
+) = lpm_or25	(
+	.data0 = data0_sig
+)
+RETURNS (
+	.result
+);

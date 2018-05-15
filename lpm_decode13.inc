@@ -22,10 +22,10 @@ FUNCTION lpm_decode13
 RETURNS (
 	eq0,
 	eq1,
+	eq11,
 	eq2,
 	eq3,
 	eq5,
 	eq6,
-	eq8,
 	eq9
 );

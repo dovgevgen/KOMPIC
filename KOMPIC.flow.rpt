@@ -1,5 +1,5 @@
 Flow report for KOMPIC
-Tue May 15 00:17:14 2018
+Tue May 15 05:29:37 2018
 Quartus II Version 9.1 Build 222 10/21/2009 SJ Web Edition
 
 
@@ -38,17 +38,17 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------+
 ; Flow Summary                                                            ;
 +-------------------------------+-----------------------------------------+
-; Flow Status                   ; Successful - Tue May 15 00:17:14 2018   ;
+; Flow Status                   ; Successful - Tue May 15 05:29:37 2018   ;
 ; Quartus II Version            ; 9.1 Build 222 10/21/2009 SJ Web Edition ;
 ; Revision Name                 ; KOMPIC                                  ;
 ; Top-level Entity Name         ; KOMPIC                                  ;
 ; Family                        ; Stratix II                              ;
 ; Met timing requirements       ; N/A                                     ;
 ; Logic utilization             ; N/A                                     ;
-;     Combinational ALUTs       ; 654                                     ;
-;     Dedicated logic registers ; 504                                     ;
-; Total registers               ; 504                                     ;
-; Total pins                    ; 213                                     ;
+;     Combinational ALUTs       ; 753                                     ;
+;     Dedicated logic registers ; 527                                     ;
+; Total registers               ; 527                                     ;
+; Total pins                    ; 172                                     ;
 ; Total virtual pins            ; 0                                       ;
 ; Total block memory bits       ; 57,344                                  ;
 ; DSP block 9-bit elements      ; 0                                       ;
@@ -62,7 +62,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 05/15/2018 00:17:07 ;
+; Start date & time ; 05/15/2018 05:29:29 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; KOMPIC              ;
 +-------------------+---------------------+
@@ -73,7 +73,9 @@ applicable agreement for further details.
 +------------------------------------+--------------------------------+---------------+-------------+----------------+
 ; Assignment Name                    ; Value                          ; Default Value ; Entity Name ; Section Id     ;
 +------------------------------------+--------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID              ; 10995770589187.152633262718392 ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID              ; 10995770589187.152635136921628 ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_DECODE                     ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_OR                         ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                       ; LPM_AND                        ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                       ; LPM_INV                        ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                       ; LPM_XOR                        ; --            ; --          ; --             ;
@@ -152,6 +154,22 @@ applicable agreement for further details.
 ; IP_TOOL_NAME                       ; LPM_OR                         ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                       ; LPM_DECODE                     ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                       ; LPM_OR                         ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_OR                         ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_OR                         ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_DECODE                     ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_FF                         ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_OR                         ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_OR                         ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_FF                         ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.1                            ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.1                            ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.1                            ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.1                            ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.1                            ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.1                            ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.1                            ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.1                            ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.1                            ; --            ; --          ; --             ;
 ; IP_TOOL_VERSION                    ; 9.1                            ; --            ; --          ; --             ;
 ; IP_TOOL_VERSION                    ; 9.1                            ; --            ; --          ; --             ;
 ; IP_TOOL_VERSION                    ; 9.1                            ; --            ; --          ; --             ;
@@ -231,6 +249,12 @@ applicable agreement for further details.
 ; IP_TOOL_VERSION                    ; 9.1                            ; --            ; --          ; --             ;
 ; IP_TOOL_VERSION                    ; 9.1                            ; --            ; --          ; --             ;
 ; MISC_FILE                          ; E:/books/6/ÊÏý/KOMPIC.dpf      ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_decode14.bsf               ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_decode14.inc               ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_decode14.cmp               ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_or20.bsf                   ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_or20.inc                   ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_or20.cmp                   ; --            ; --          ; --             ;
 ; MISC_FILE                          ; lpm_and0.bsf                   ; --            ; --          ; --             ;
 ; MISC_FILE                          ; lpm_and0.inc                   ; --            ; --          ; --             ;
 ; MISC_FILE                          ; lpm_and0.cmp                   ; --            ; --          ; --             ;
@@ -462,9 +486,32 @@ applicable agreement for further details.
 ; MISC_FILE                          ; lpm_decode13.bsf               ; --            ; --          ; --             ;
 ; MISC_FILE                          ; lpm_decode13.inc               ; --            ; --          ; --             ;
 ; MISC_FILE                          ; lpm_decode13.cmp               ; --            ; --          ; --             ;
-; MISC_FILE                          ; lpm_or20.bsf                   ; --            ; --          ; --             ;
-; MISC_FILE                          ; lpm_or20.inc                   ; --            ; --          ; --             ;
-; MISC_FILE                          ; lpm_or20.cmp                   ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_or21.bsf                   ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_or21.inc                   ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_or21.cmp                   ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_or22.bsf                   ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_or22.inc                   ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_or22.cmp                   ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_or23.bsf                   ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_or23.inc                   ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_or23.cmp                   ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_decode15.bsf               ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_decode15.inc               ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_decode15.cmp               ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_dff11.bsf                  ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_dff11.inc                  ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_dff11.cmp                  ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_or24.bsf                   ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_or24.inc                   ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_or24.cmp                   ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_or25.tdf                   ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_or25.bsf                   ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_or25_inst.tdf              ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_or25.inc                   ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_or25.cmp                   ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_dff12.bsf                  ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_dff12.inc                  ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_dff12.cmp                  ; --            ; --          ; --             ;
 ; PARTITION_COLOR                    ; 16764057                       ; --            ; --          ; Top            ;
 ; PARTITION_NETLIST_TYPE             ; SOURCE                         ; --            ; --          ; Top            ;
 ; USE_GENERATED_PHYSICAL_CONSTRAINTS ; Off                            ; --            ; --          ; eda_blast_fpga ;
@@ -476,7 +523,7 @@ applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:07     ; 1.0                     ; 298 MB              ; 00:00:07                           ;
+; Analysis & Synthesis ; 00:00:07     ; 1.0                     ; 302 MB              ; 00:00:07                           ;
 ; Total                ; 00:00:07     ; --                      ; --                  ; 00:00:07                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 

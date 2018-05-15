@@ -48,7 +48,7 @@ set_global_assignment -name MISC_FILE "E:/books/6/ÊÏý/KOMPIC.dpf"
 set_global_assignment -name SIMULATION_MODE FUNCTIONAL
 set_global_assignment -name ADD_DEFAULT_PINS_TO_SIMULATION_OUTPUT_WAVEFORMS OFF
 set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE KOMPIC.vwf
-set_global_assignment -name END_TIME "100 ms"
+set_global_assignment -name END_TIME "10 ms"
 set_global_assignment -name BDF_FILE KOMPIC.bdf
 set_global_assignment -name BDF_FILE OP_NAND.bdf
 set_global_assignment -name BDF_FILE OP_XOR.bdf
@@ -66,6 +66,7 @@ set_global_assignment -name BDF_FILE TEST.bdf
 set_global_assignment -name BDF_FILE MEMORY.bdf
 set_global_assignment -name BDF_FILE GPR.bdf
 set_global_assignment -name BDF_FILE CU.bdf
+set_global_assignment -name BDF_FILE ADDC_REG_REG.bdf
 set_global_assignment -name BDF_FILE JBZ.bdf
 set_global_assignment -name BDF_FILE JMP.bdf
 set_global_assignment -name BDF_FILE POP.bdf
@@ -83,6 +84,8 @@ set_global_assignment -name VECTOR_WAVEFORM_FILE GPR.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE FLAG.vwf
 set_global_assignment -name HEX_FILE ROM.hex
 set_global_assignment -name HEX_FILE RAM.hex
+set_global_assignment -name QIP_FILE lpm_decode14.qip
+set_global_assignment -name QIP_FILE lpm_or20.qip
 set_global_assignment -name QIP_FILE lpm_and0.qip
 set_global_assignment -name QIP_FILE lpm_inv0.qip
 set_global_assignment -name QIP_FILE lpm_xor0.qip
@@ -164,7 +167,14 @@ set_global_assignment -name QIP_FILE lpm_decode12.qip
 set_global_assignment -name QIP_FILE lpm_or18.qip
 set_global_assignment -name QIP_FILE lpm_or19.qip
 set_global_assignment -name QIP_FILE lpm_decode13.qip
-set_global_assignment -name QIP_FILE lpm_or20.qip
+set_global_assignment -name QIP_FILE lpm_or21.qip
+set_global_assignment -name QIP_FILE lpm_or22.qip
+set_global_assignment -name QIP_FILE lpm_or23.qip
+set_global_assignment -name QIP_FILE lpm_decode15.qip
+set_global_assignment -name QIP_FILE lpm_dff11.qip
+set_global_assignment -name QIP_FILE lpm_or24.qip
+set_global_assignment -name QIP_FILE lpm_or25.qip
+set_global_assignment -name QIP_FILE lpm_dff12.qip
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
