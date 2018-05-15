@@ -43,6 +43,7 @@ ENTITY lpm_or13 IS
 	PORT
 	(
 		data0		: IN STD_LOGIC ;
+		data1		: IN STD_LOGIC ;
 		result		: OUT STD_LOGIC 
 	);
 END lpm_or13;
@@ -55,17 +56,20 @@ ARCHITECTURE SYN OF lpm_or13 IS
 	SIGNAL sub_wire0	: STD_LOGIC_VECTOR (0 DOWNTO 0);
 	SIGNAL sub_wire1	: STD_LOGIC ;
 	SIGNAL sub_wire2	: STD_LOGIC ;
-	SIGNAL sub_wire3	: STD_LOGIC_2D (0 DOWNTO 0, 0 DOWNTO 0);
+	SIGNAL sub_wire3	: STD_LOGIC_2D (1 DOWNTO 0, 0 DOWNTO 0);
+	SIGNAL sub_wire4	: STD_LOGIC ;
 
 BEGIN
+	sub_wire4    <= data0;
 	sub_wire1    <= sub_wire0(0);
 	result    <= sub_wire1;
-	sub_wire2    <= data0;
-	sub_wire3(0, 0)    <= sub_wire2;
+	sub_wire2    <= data1;
+	sub_wire3(1, 0)    <= sub_wire2;
+	sub_wire3(0, 0)    <= sub_wire4;
 
 	lpm_or_component : lpm_or
 	GENERIC MAP (
-		lpm_size => 1,
+		lpm_size => 2,
 		lpm_type => "LPM_OR",
 		lpm_width => 1
 	)
@@ -87,13 +91,15 @@ END SYN;
 -- Retrieval info: PRIVATE: InputAsBus NUMERIC "0"
 -- Retrieval info: PRIVATE: SYNTH_WRAPPER_GEN_POSTFIX STRING "0"
 -- Retrieval info: PRIVATE: WidthInput NUMERIC "1"
--- Retrieval info: PRIVATE: nInput NUMERIC "1"
--- Retrieval info: CONSTANT: LPM_SIZE NUMERIC "1"
+-- Retrieval info: PRIVATE: nInput NUMERIC "2"
+-- Retrieval info: CONSTANT: LPM_SIZE NUMERIC "2"
 -- Retrieval info: CONSTANT: LPM_TYPE STRING "LPM_OR"
 -- Retrieval info: CONSTANT: LPM_WIDTH NUMERIC "1"
 -- Retrieval info: USED_PORT: data0 0 0 0 0 INPUT NODEFVAL data0
+-- Retrieval info: USED_PORT: data1 0 0 0 0 INPUT NODEFVAL data1
 -- Retrieval info: USED_PORT: result 0 0 0 0 OUTPUT NODEFVAL result
 -- Retrieval info: CONNECT: @data 1 0 1 0 data0 0 0 0 0
+-- Retrieval info: CONNECT: @data 1 1 1 0 data1 0 0 0 0
 -- Retrieval info: CONNECT: result 0 0 0 0 @result 0 0 1 0
 -- Retrieval info: LIBRARY: lpm lpm.lpm_components.all
 -- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_or13.vhd TRUE

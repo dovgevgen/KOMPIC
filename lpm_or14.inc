@@ -17,6 +17,7 @@ FUNCTION lpm_or14
 (
 	data0,
 	data1,
+	data10,
 	data2,
 	data3,
 	data4,
