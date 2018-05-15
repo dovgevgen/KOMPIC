@@ -16,7 +16,8 @@
 FUNCTION lpm_or13 
 (
 	data0,
-	data1
+	data1,
+	data2
 )
 
 RETURNS (

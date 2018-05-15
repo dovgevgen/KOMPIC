@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Stratix II"
 set_global_assignment -name DEVICE AUTO
-set_global_assignment -name TOP_LEVEL_ENTITY KOMPIC
+set_global_assignment -name TOP_LEVEL_ENTITY CU
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 9.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "00:01:35  APRIL 30, 2018"
 set_global_assignment -name LAST_QUARTUS_VERSION 9.1
@@ -185,6 +185,9 @@ set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE KOMPIC.vwf
 set_global_assignment -name QIP_FILE lpm_decode19.qip
 set_global_assignment -name BDF_FILE ADDC_REG_lADRl.bdf
 set_global_assignment -name QIP_FILE lpm_or26.qip
+set_global_assignment -name BDF_FILE XOR_REG_lADRl.bdf
+set_global_assignment -name BDF_FILE NAND_REG_lADRl.bdf
+set_global_assignment -name BDF_FILE SLA_REG_lADRl.bdf
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"

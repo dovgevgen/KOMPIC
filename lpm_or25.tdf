@@ -43,13 +43,14 @@ SUBDESIGN lpm_or25
 	data2	 : INPUT;
 	data3	 : INPUT;
 	data4	 : INPUT;
+	data5	 : INPUT;
 	result	 : OUTPUT;
 )
 
 VARIABLE
 
 	lpm_or_component : lpm_or WITH (
-			LPM_SIZE = 5,
+			LPM_SIZE = 6,
 			LPM_TYPE = "LPM_OR",
 			LPM_WIDTH = 1
 			);
@@ -57,6 +58,7 @@ VARIABLE
 BEGIN
 
 	result = lpm_or_component.result[0..0];
+	lpm_or_component.data[5..5][0..0] = data5;
 	lpm_or_component.data[4..4][0..0] = data4;
 	lpm_or_component.data[3..3][0..0] = data3;
 	lpm_or_component.data[2..2][0..0] = data2;
@@ -75,8 +77,8 @@ END;
 -- Retrieval info: PRIVATE: InputAsBus NUMERIC "0"
 -- Retrieval info: PRIVATE: SYNTH_WRAPPER_GEN_POSTFIX STRING "0"
 -- Retrieval info: PRIVATE: WidthInput NUMERIC "1"
--- Retrieval info: PRIVATE: nInput NUMERIC "5"
--- Retrieval info: CONSTANT: LPM_SIZE NUMERIC "5"
+-- Retrieval info: PRIVATE: nInput NUMERIC "6"
+-- Retrieval info: CONSTANT: LPM_SIZE NUMERIC "6"
 -- Retrieval info: CONSTANT: LPM_TYPE STRING "LPM_OR"
 -- Retrieval info: CONSTANT: LPM_WIDTH NUMERIC "1"
 -- Retrieval info: USED_PORT: data0 0 0 0 0 INPUT NODEFVAL data0
@@ -84,12 +86,14 @@ END;
 -- Retrieval info: USED_PORT: data2 0 0 0 0 INPUT NODEFVAL data2
 -- Retrieval info: USED_PORT: data3 0 0 0 0 INPUT NODEFVAL data3
 -- Retrieval info: USED_PORT: data4 0 0 0 0 INPUT NODEFVAL data4
+-- Retrieval info: USED_PORT: data5 0 0 0 0 INPUT NODEFVAL data5
 -- Retrieval info: USED_PORT: result 0 0 0 0 OUTPUT NODEFVAL result
 -- Retrieval info: CONNECT: @data 1 0 1 0 data0 0 0 0 0
 -- Retrieval info: CONNECT: @data 1 1 1 0 data1 0 0 0 0
 -- Retrieval info: CONNECT: @data 1 2 1 0 data2 0 0 0 0
 -- Retrieval info: CONNECT: @data 1 3 1 0 data3 0 0 0 0
 -- Retrieval info: CONNECT: @data 1 4 1 0 data4 0 0 0 0
+-- Retrieval info: CONNECT: @data 1 5 1 0 data5 0 0 0 0
 -- Retrieval info: CONNECT: result 0 0 0 0 @result 0 0 1 0
 -- Retrieval info: LIBRARY: lpm lpm.lpm_components.all
 -- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_or25.tdf TRUE

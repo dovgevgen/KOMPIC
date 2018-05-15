@@ -19,7 +19,8 @@ FUNCTION lpm_or24
 	data1,
 	data2,
 	data3,
-	data4
+	data4,
+	data5
 )
 
 RETURNS (

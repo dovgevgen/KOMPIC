@@ -15,7 +15,8 @@
 
 FUNCTION lpm_or26 
 (
-	data0
+	data0,
+	data1
 )
 
 RETURNS (

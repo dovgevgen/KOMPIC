@@ -19,6 +19,7 @@ FUNCTION lpm_or9
 	data1,
 	data10,
 	data11,
+	data12,
 	data2,
 	data3,
 	data4,

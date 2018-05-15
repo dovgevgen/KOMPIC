@@ -24,11 +24,18 @@ applicable agreement for further details.
 	(text "lpm_or26" (rect 6 1 68 17)(font "Arial" (font_size 10)))
 	(text "inst" (rect 8 40 25 52)(font "Arial" ))
 	(port
-		(pt 0 32)
+		(pt 0 24)
 		(input)
 		(text "data0" (rect 0 0 31 14)(font "Arial" (font_size 8)))
-		(text "data0" (rect 4 5 17 32)(font "Arial" (font_size 8))(invisible))
-		(line (pt 0 32)(pt 20 32)(line_width 1))
+		(text "data0" (rect 4 -3 17 24)(font "Arial" (font_size 8))(invisible))
+		(line (pt 0 24)(pt 18 24)(line_width 1))
+	)
+	(port
+		(pt 0 40)
+		(input)
+		(text "data1" (rect 0 0 31 14)(font "Arial" (font_size 8)))
+		(text "data1" (rect 4 13 17 40)(font "Arial" (font_size 8))(invisible))
+		(line (pt 0 40)(pt 18 40)(line_width 1))
 	)
 	(port
 		(pt 64 32)
